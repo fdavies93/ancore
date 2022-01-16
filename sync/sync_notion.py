@@ -1,5 +1,5 @@
 from .sync_types import *
-from dataset import COLUMN_TYPE, DataSet
+from ..dataset import COLUMN_TYPE, DataSet
 import requests
 import uuid
 

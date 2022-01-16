@@ -2,11 +2,11 @@ from json.encoder import JSONEncoder
 from os import unlink, write
 
 import anki
-from dataset import *
-from sync.sync_notion import NotionReader, NotionWriter
-from sync.sync_types import *
-from sync.sync_tsv import *
-from sync.sync_json import *
+from core.dataset import *
+from core.sync.sync_notion import NotionReader, NotionWriter
+from core.sync.sync_types import *
+from core.sync.sync_tsv import *
+from core.sync.sync_json import *
 import unittest
 from os.path import dirname, exists, join, realpath
 import json
