@@ -1,4 +1,4 @@
-from sync.sync_types import *
+from .sync_types import *
 import os
 from os.path import *
 from typing import Callable
