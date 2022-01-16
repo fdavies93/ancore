@@ -3,7 +3,7 @@ from abc import ABC
 
 import requests
 
-from dataset import *
+from ..dataset import *
 
 class DATA_SOURCE(IntEnum):
     JSON = 0,
