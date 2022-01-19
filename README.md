@@ -17,11 +17,17 @@ Provides the data manipulation and synchronisation layers which [Anchor](https:/
 
 ### How to Test Ancore
 
-We currently use coverage to run unit tests:
+First, run setup.command to setup the appropriate Python module structure. *If the directory structure is incorrect most tests will fail.*
+
+If you want to set up the folder structure manually, move everything into a subfolder named core and copy the contents of tests to the root folder.
+
+Next, set up your config.json file with a valid Notion API key.
+
+Finally, run the unit tests using [coverage](https://coverage.readthedocs.io/en/6.2/). You can use run_tests.command if you want to keep the repository in line with unit test data or the simpler 
+
 ``` coverage run unit_test.py ```
 
-Or if you prefer an html output:
-``` coverage html unit_test.py ```
+if you just want to run the unit tests.
 
 ## FAQ
 

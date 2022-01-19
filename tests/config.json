@@ -1,0 +1,9 @@
+{
+    "maps": [
+        {
+            "source": 3,
+            "api_key": "YOUR VALID NOTION KEY"
+        }
+    ],
+    "test_notion_api": "YOUR VALID NOTION KEY"
+}
