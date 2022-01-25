@@ -1,7 +1,6 @@
 from json.encoder import JSONEncoder
 from os import unlink, write
 
-import anki
 from core.dataset import *
 from core.sync.sync_notion import NotionReader, NotionWriter
 from core.sync.sync_types import *
@@ -789,7 +788,7 @@ class TestDataMerges(unittest.TestCase):
 
 class TestDataSet(unittest.TestCase):
     def setUp(self) -> None:
-        locale.setlocale(locale.LC_ALL,"en_US")
+        locale.setlocale(locale.LC_ALL,"")
         # avoids errors with date formatting
         self.cols = [
             DataColumn(COLUMN_TYPE.TEXT, "title"),

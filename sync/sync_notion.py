@@ -4,6 +4,7 @@ import requests
 import uuid
 
 select_color_list = ["orange", "yellow", "green", "blue", "purple", "pink", "red"]
+notion_version = "2021-08-16"
 
 def make_property_date(ds : DataSet, col_name: str, uvs : Dict[str, Set[str]]):
     return {"date": {}}
@@ -28,7 +29,7 @@ def make_property_select(ds : DataSet, col_name: str, uvs : Dict[str, Set[str]])
 
 def make_value_title(id : str, value : str):
     return {
-        "title" : make_value_text(value)["rich_text"]
+        "title" : make_value_text(id, value)["rich_text"]
     }
 
 def make_value_text(id : str, value : str):
@@ -37,7 +38,10 @@ def make_value_text(id : str, value : str):
             {
                 "plain_text": value,
                 "annotations": make_annotation(),
-                "type": "text"
+                "type": "text",
+                "text": {
+                    "content": value
+                }
             }
         ]
     }
@@ -77,8 +81,12 @@ def make_annotation(bold : bool = False, italic : bool = False, strikethrough: b
 
 def get_notion_primary_key(result) -> str:
     for prop in result["properties"]:
-        if result["properties"][prop]["type"] == "title":
-            return prop
+        try:
+            if result["properties"][prop]["type"] == "title":
+                return prop
+        except KeyError as ke:
+            print ("Error: property " + prop + " has no type.")
+            print (result["properties"][prop])
 
 def get_notion_property_ids(result) -> Dict[str, str]:
     id_dict = {}
@@ -102,6 +110,7 @@ class NotionSyncHandle(SyncHandle):
 
 class NotionWriter(SourceWriter):
     '''Write records to Notion.'''
+
     make_property_strategies = {
         COLUMN_TYPE.DATE: make_property_date,
         COLUMN_TYPE.TEXT: make_property_text,
@@ -136,18 +145,19 @@ class NotionWriter(SourceWriter):
             parent = {"type": "workspace", "workspace": True}
         title = { "plain_text": spec.name, "annotations": make_annotation(), "type": "text", "text": {"content": spec.name} }
         data = { "parent": parent, "title": [title], "properties": NotionWriter.extract_properties(dataset)}
-        res = requests.post("https://api.notion.com/v1/databases", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": "2021-05-13"})
+        res = requests.post("https://api.notion.com/v1/databases", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
         json = res.json()
-        print (json)
         spec_out = copy.deepcopy(spec)
         spec_out.parameters["id"] = json["id"]
-        spec_out.parameters["primary_key"] = get_notion_primary_key(data)
+        spec_out.parameters["primary_key"] = get_notion_primary_key(json)
         spec_out.parameters["columns"] = get_notion_property_ids(json)
         return spec_out
 
     def _write_records(self, dataset : DataSet, limit: int = -1, next_iterator : NotionSyncHandle = None) -> NotionSyncHandle:
         for record in dataset.records:
-            self._write_record(dataset, record)
+            write_result = self._write_record(dataset, record)
+            if write_result.status_code != 200:
+                print(write_result)
 
     def _write_record(self, dataset : DataSet, record : DataRecord):
         property_dict = {}
@@ -166,7 +176,7 @@ class NotionWriter(SourceWriter):
             "properties": property_dict
         }
 
-        return requests.post("https://api.notion.com/v1/pages", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": "2021-05-13"})
+        return requests.post("https://api.notion.com/v1/pages", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
 
     @staticmethod
     def extract_properties(ds : DataSet):
@@ -227,7 +237,7 @@ class NotionReader(SourceReader):
         if self.api_key == None:
             raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "API key not set in NotionReader.")
         data = { "filter": {"property": "object", "value": "page"} }
-        res = requests.post("https://api.notion.com/v1/search", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": "2021-05-13"})
+        res = requests.post("https://api.notion.com/v1/search", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
         json = res.json()
         return [self._parse_page_result(page) for page in json["results"]]
 
@@ -247,7 +257,7 @@ class NotionReader(SourceReader):
 
     def get_databases(self, api_key : str):
         data = { "filter": {"property": "object", "value": "database"} }
-        res = requests.post("https://api.notion.com/v1/search", json=data, auth=BearerAuth(api_key), headers={"Notion-Version": "2021-05-13"})
+        res = requests.post("https://api.notion.com/v1/search", json=data, auth=BearerAuth(api_key), headers={"Notion-Version": notion_version})
         json = res.json()
         return [self._parse_database_result(x) for x in json["results"]]
 
@@ -255,7 +265,7 @@ class NotionReader(SourceReader):
         url = f"https://api.notion.com/v1/databases/{id}/query"
         data = {"page_size": number}
         if iterator is not None: data["start_cursor"] = iterator.handle
-        res = requests.post(url, json=data, auth=BearerAuth(api_key), headers={"Notion-Version": "2021-05-13"})
+        res = requests.post(url, json=data, auth=BearerAuth(api_key), headers={"Notion-Version": notion_version})
         json = res.json()
         it = None
         if json["has_more"]:
@@ -268,7 +278,7 @@ class NotionReader(SourceReader):
 
     def get_column_spec(self, api_key, id) -> List[DataColumn]:
         url = f"https://api.notion.com/v1/databases/{id}"
-        res = requests.get(url, auth=BearerAuth(api_key), headers={"Notion-Version": "2021-05-13"})
+        res = requests.get(url, auth=BearerAuth(api_key), headers={"Notion-Version": notion_version})
         json = res.json()
         return [ self._map_column(k,json["properties"][k]) for k in json["properties"] ]
 
