@@ -1,5 +1,0 @@
-id	date	multiselect	select	bad_data
-0	Mar 23, 1994 12:01 pm	0,1,2,3,4	0	xyz
-1	Mar 24, 1995 12:02 pm	1,2,3,4,5	1	000 000 000
-2	Mar 25, 1996 12:03 pm	2,3,4,5,6	2	
-3	Mar 26, 1997 12:04 pm	3,4,5,6,7	3	
