@@ -996,7 +996,7 @@ class TestDataSet(unittest.TestCase):
 
 
     def test_convert_types_correct(self):
-        test_format = DataSetFormat(multiselect_delimiter=",", time_format="%b %d, %Y %I:%M %p")
+        test_format = DataSetFormat(multiselect_delimiter=",", time_formats=["%b %d, %Y %I:%M %p"])
         ds = DataSet(self.cols, format=test_format)
 
         # Select
@@ -1017,7 +1017,7 @@ class TestDataSet(unittest.TestCase):
         # Dates
 
         test_date_str = "Mar 23, 1994 12:01 PM"
-        test_date = datetime.strptime(test_date_str, test_format.time_format)
+        test_date = datetime.strptime(test_date_str, test_format.time_formats[0])
 
         cur_out = ds.change_data_type("Mar 23, 1994 12:01 PM", COLUMN_TYPE.TEXT, COLUMN_TYPE.DATE)
         self.assertEqual(test_date, cur_out)

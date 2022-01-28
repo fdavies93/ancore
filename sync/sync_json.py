@@ -35,7 +35,7 @@ class JsonWriter(SourceWriter):
         for date_col in date_columns:
             clone.change_column_type(date_col, COLUMN_TYPE.TEXT)
         
-        format_as_dict = { "multiselect_delimiter": clone.format.multiselect_delimiter, "time_format": clone.format.time_format }
+        format_as_dict = { "multiselect_delimiter": clone.format.multiselect_delimiter, "time_formats": clone.format.time_formats }
 
         records_list = [ r.asdict() for r in clone.records ]
         
@@ -86,7 +86,7 @@ class JsonReader(SourceReader):
             raise SyncError(SYNC_ERROR_CODE.FILE_ERROR, "Error reading file in.")
 
         format_raw = raw_json["header"]["format"]
-        format_obj = DataSetFormat( multiselect_delimiter= format_raw["multiselect_delimiter"], time_format=format_raw["time_format"] )
+        format_obj = DataSetFormat( multiselect_delimiter= format_raw["multiselect_delimiter"], time_formats=format_raw["time_formats"] )
 
         columns_raw : dict = raw_json["header"]["columns"]
         

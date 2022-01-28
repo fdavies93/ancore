@@ -41,10 +41,11 @@ class ColumnError(ValueError):
         self.error_code = error_code
         super().__init__(message)
 
-@dataclass
 class DataSetFormat:
-    multiselect_delimiter: str = ","
-    time_format: str = "%b %d, %Y %I:%M %p"
+
+    def __init__(self, multiselect_delimiter : str = ",", time_formats : list[str] = ["%b %d, %Y %I:%M %p"]):
+        self.multiselect_delimiter: str = ","
+        self.time_formats: list[str] = ["%b %d, %Y %I:%M %p"]
 
 @dataclass
 class DataMap:
@@ -471,10 +472,32 @@ class DataSet:
         return txt.split(self.format.multiselect_delimiter)
 
     def _text_to_date(self, txt):
-        return datetime.strptime(txt,self.format.time_format)
+        date_obj : datetime = None
+        for format in self.format.time_formats:
+            try:
+                date_obj = datetime.strptime(txt,format)
+                break
+            except ValueError: # format doesn't work
+                print ("Format " + format + " unsuccessful in text_to_date.")
+                pass
+        if date_obj == None: # no user-defined formats were successful
+            date_obj = datetime.fromisoformat(txt)
+            # let this one fail with an error, to provide feedback to higher-level functions
+        return date_obj
 
-    def _date_to_text(self, date):
-        return datetime.strftime(date, self.format.time_format)
+    def _date_to_text(self, date : datetime):
+        date_str : str = None
+        for format in self.format.time_formats:
+            try: # generally provides first format
+                date_str = date.strftime(format)
+                break
+            except ValueError: # format doesn't work
+                print ("Format " + format + " unsuccessful in date_to_text.")
+                pass
+        if date_str == None: # no user-defined formats were successful or provided
+            date_str = date.isoformat()
+            # let this one fail with an error, to provide feedback to higher-level functions
+        return date_str
 
     def _multiselect_to_text(self, multi_select: list):
         return self.format.multiselect_delimiter.join(multi_select)
