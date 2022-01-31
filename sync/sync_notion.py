@@ -176,8 +176,8 @@ class NotionWriter(SourceWriter):
         start_i : int = 0
         if next_iterator != None:
             last_written = next_iterator.params["last_written"]
-            if last_written < record_count and last_written >= 0:
-                start_i = last_written
+            if last_written + 1 < record_count and last_written >= 0:
+                start_i = last_written + 1
 
         end_i : int = start_i + limit
         
