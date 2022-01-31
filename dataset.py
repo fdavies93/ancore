@@ -43,9 +43,9 @@ class ColumnError(ValueError):
 
 class DataSetFormat:
 
-    def __init__(self, multiselect_delimiter : str = ",", time_formats : list[str] = ["%b %d, %Y %I:%M %p"]):
-        self.multiselect_delimiter: str = ","
-        self.time_formats: list[str] = ["%b %d, %Y %I:%M %p"]
+    def __init__(self, multiselect_delimiter : str = ",", time_formats : list[str] = []):
+        self.multiselect_delimiter: str = multiselect_delimiter
+        self.time_formats: list[str] = time_formats
 
 @dataclass
 class DataMap:

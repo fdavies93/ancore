@@ -2,6 +2,7 @@ from .sync_types import *
 from ..dataset import COLUMN_TYPE, DataSet
 import requests
 import uuid
+import json
 
 select_color_list = ["orange", "yellow", "green", "blue", "purple", "pink", "red"]
 notion_version = "2021-08-16"
@@ -62,6 +63,8 @@ def make_value_multiselect(id : str, value: List[str]):
     }
 
 def make_value_date(id : str, value : datetime):
+    if value == None:
+        return None # looks silly, but should set value to empty
     return {
         "date": {
             "start": value.astimezone().replace(microsecond=0).isoformat()
@@ -147,6 +150,8 @@ class NotionWriter(SourceWriter):
         data = { "parent": parent, "title": [title], "properties": NotionWriter.extract_properties(dataset)}
         res = requests.post("https://api.notion.com/v1/databases", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
         json = res.json()
+        if res.status_code != 200:
+            raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, message=json)
         spec_out = copy.deepcopy(spec)
         spec_out.parameters["id"] = json["id"]
         spec_out.parameters["primary_key"] = get_notion_primary_key(json)
@@ -157,7 +162,7 @@ class NotionWriter(SourceWriter):
         for record in dataset.records:
             write_result = self._write_record(dataset, record)
             if write_result.status_code != 200:
-                print(write_result)
+                raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, message=write_result.json)
 
     def _write_record(self, dataset : DataSet, record : DataRecord):
         property_dict = {}

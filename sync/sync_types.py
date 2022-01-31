@@ -14,7 +14,8 @@ class DATA_SOURCE(IntEnum):
 class SYNC_ERROR_CODE(IntEnum):
     PARAMETER_NOT_FOUND = 0,
     FILE_ERROR = 1,
-    INCORRECT_SOURCE = 2
+    INCORRECT_SOURCE = 2,
+    REQUEST_REJECTED = 3
 
 @dataclass
 class TableSpec:

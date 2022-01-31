@@ -23,6 +23,7 @@ class NotionTest(unittest.TestCase):
         with open(path, "r") as f:
             config = json.load(f)
         self.secret = config["test_notion_api"]
+        self.test_page = config["test_notion_page_parent"]
 
     def test_get_tables(self):
         reader = NotionReader(self.secret)
@@ -60,7 +61,7 @@ class NotionTest(unittest.TestCase):
         tsv.create_table_sync(ds)
 
     def test_create_table(self):
-        tsv = TsvReader(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_input/tsv_read_test.tsv"}, "tsv_read_test"))
+        tsv = TsvReader(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_input/tsv_basic_test.tsv"}, "tsv_basic_test"))
         map_cols = {
             "id": DataColumn(COLUMN_TYPE.TEXT, "id"),
             "date": DataColumn(COLUMN_TYPE.DATE, "date"),
@@ -68,14 +69,12 @@ class NotionTest(unittest.TestCase):
             "select": DataColumn(COLUMN_TYPE.SELECT, "select"),
             "bad_data": DataColumn(COLUMN_TYPE.TEXT, "bad_data")
         }
-        dm = DataMap(map_cols, DataSetFormat())
+        dm = DataMap(map_cols, DataSetFormat(time_formats=["%b %d, %Y %I:%M %p"]))
         ds = tsv.read_records_sync(mapping=dm).records
         nw = NotionWriter(self.secret)
-        nr = NotionReader(self.secret)
-        parent_specs = nr.get_table_parents()
-        print("Creating table as child of " + parent_specs[0].name)
-        parent = parent_specs[0].parameters["parent_id"]
-        table = nw.create_table(ds,TableSpec(DATA_SOURCE.NOTION, {"parent_id": parent}, "API Test Database"))
+        parent_id = self.test_page
+        table = nw.create_table(ds,TableSpec(DATA_SOURCE.NOTION, {"parent_id": parent_id}, "API Test Database"))
+        print("Created table at " + table.parameters["id"])
         nw.set_table(table)
         nw._write_records(ds)
 
@@ -167,7 +166,7 @@ class TestTsvSync(unittest.TestCase):
         reader = TsvReader(TableSpec(DATA_SOURCE.TSV,{"file_path": "./test_input/tsv_basic_test.tsv"},"read_test"))
         handle = asyncio.run( reader.read_records(mapping=dm) )
         ds = handle.records
-        writer = TsvWriter(TableSpec(DATA_SOURCE.TSV,{"file_path": "./test_input/tsv_read_test.tsv"},"read_test"))
+        writer = TsvWriter(TableSpec(DATA_SOURCE.TSV,{"file_path": "./test_output/tsv_read_test.tsv"},"read_test"))
         asyncio.run( writer.create_table(ds) )
 
     def test_it_read_10(self):
@@ -880,25 +879,25 @@ class TestDataSet(unittest.TestCase):
         self.type_change_records_text = [
             {
                 "id": "0",
-                "date": "Mar 23, 1994 12:01 PM",
+                "date": "1994-03-23T12:01:00",
                 "multiselect": "0,1,2,3,4",
                 "select": "0",
             },
             {
                 "id": "1",
-                "date": "Mar 24, 1995 12:02 PM",
+                "date": "1995-03-24T12:02:00",
                 "multiselect": "1,2,3,4,5",
                 "select": "1",
             },
             {
                 "id": "2",
-                "date": "Mar 25, 1996 12:03 PM",
+                "date": "1996-03-25T12:03:00",
                 "multiselect": "2,3,4,5,6",
                 "select": "2",
             },
             {
                 "id": "3",
-                "date": "Mar 26, 1997 12:04 PM",
+                "date": "1997-03-26T12:04:00",
                 "multiselect": "3,4,5,6,7",
                 "select": "3",
             }
@@ -996,7 +995,7 @@ class TestDataSet(unittest.TestCase):
 
 
     def test_convert_types_correct(self):
-        test_format = DataSetFormat(multiselect_delimiter=",", time_formats=["%b %d, %Y %I:%M %p"])
+        test_format = DataSetFormat(multiselect_delimiter=",")
         ds = DataSet(self.cols, format=test_format)
 
         # Select
@@ -1016,10 +1015,10 @@ class TestDataSet(unittest.TestCase):
 
         # Dates
 
-        test_date_str = "Mar 23, 1994 12:01 PM"
-        test_date = datetime.strptime(test_date_str, test_format.time_formats[0])
+        test_date_str = "1994-03-23T12:01:00"
+        test_date = datetime.fromisoformat(test_date_str)
 
-        cur_out = ds.change_data_type("Mar 23, 1994 12:01 PM", COLUMN_TYPE.TEXT, COLUMN_TYPE.DATE)
+        cur_out = ds.change_data_type("1994-03-23T12:01:00", COLUMN_TYPE.TEXT, COLUMN_TYPE.DATE)
         self.assertEqual(test_date, cur_out)
 
         cur_out = ds.change_data_type(test_date, COLUMN_TYPE.DATE, COLUMN_TYPE.TEXT)
@@ -1177,7 +1176,7 @@ class TestDataSet(unittest.TestCase):
         text_list = [
         {
                 "id": "0",
-                "date": "Mar 23, 1994 12:01 PM",
+                "date": "1994-03-23T12:01:00",
                 "multiselect": "0,1,2,3,4",
                 "select": "0",
         },    
