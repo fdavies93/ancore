@@ -5,5 +5,7 @@
             "api_key": "YOUR VALID NOTION KEY"
         }
     ],
-    "test_notion_api": "YOUR VALID NOTION KEY"
+    "test_notion_api": "YOUR VALID NOTION KEY",
+    "test_notion_page_parent": "PAGE ID FOR TESTING NOTION WRITES",
+    "test_notion_read_db": "PAGE ID FOR TESTING NOTION READS"
 }

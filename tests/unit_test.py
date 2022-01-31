@@ -14,6 +14,7 @@ import asyncio
 import copy
 import time
 import locale
+import math
 
 class NotionTest(unittest.TestCase):
     ''' Test Notion reader and writer. '''
@@ -24,6 +25,19 @@ class NotionTest(unittest.TestCase):
             config = json.load(f)
         self.secret = config["test_notion_api"]
         self.test_page = config["test_notion_page_parent"]
+        self.notion_db = config["test_notion_read_db"]
+
+    def get_test_table(self, reader : NotionReader) -> TableSpec:
+        tables = reader.get_tables()
+
+        test_table = tables[0]
+
+        for table in tables:
+            if table.parameters["id"].replace('-','') == self.notion_db:
+                test_table = table
+                break
+        
+        return test_table
 
     def test_get_tables(self):
         reader = NotionReader(self.secret)
@@ -31,10 +45,11 @@ class NotionTest(unittest.TestCase):
 
     def test_get_records_basic(self):
         reader = NotionReader(self.secret)
-        tables = reader.get_tables()
-        reader.set_table(tables[0])
+        tbl : TableSpec = self.get_test_table(reader)
+        reader.set_table(tbl)
         it = reader.read_records_sync(100)
         ds = it.records
+        ds.format = DataSetFormat(time_formats = ["%b %d, %Y %I:%M %p"]) # make it pretty-print dates - try commenting this out for default ISO dates
         while it.handle != None:
             it = reader.read_records_sync(100, it)
             ds.add_records(it.records.records)
@@ -54,9 +69,12 @@ class NotionTest(unittest.TestCase):
 
     def test_get_records_async(self):
         reader = NotionReader(self.secret)
-        tables = reader.get_tables()
-        reader.set_table(tables[0])
-        ds = asyncio.run(self.awaitable_read(reader))
+
+        tbl : TableSpec = self.get_test_table(reader)
+
+        reader.set_table(tbl)
+        ds : DataSet = asyncio.run(self.awaitable_read(reader))
+        ds.format = DataSetFormat(time_formats = ["%b %d, %Y %I:%M %p"]) # make it pretty-print dates - try commenting this out for default ISO dates
         tsv = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_output/notion_read_all_async.tsv"}, "notion_read_all_async"))
         tsv.create_table_sync(ds)
 
@@ -73,10 +91,46 @@ class NotionTest(unittest.TestCase):
         ds = tsv.read_records_sync(mapping=dm).records
         nw = NotionWriter(self.secret)
         parent_id = self.test_page
-        table = nw.create_table(ds,TableSpec(DATA_SOURCE.NOTION, {"parent_id": parent_id}, "API Test Database"))
-        print("Created table at " + table.parameters["id"])
-        nw.set_table(table)
-        nw._write_records(ds)
+        table_sync = nw.create_table(ds,TableSpec(DATA_SOURCE.NOTION, {"parent_id": parent_id}, "API Test Sync"))
+        table_async = nw.create_table(ds,TableSpec(DATA_SOURCE.NOTION, {"parent_id": parent_id}, "API Test Async"))
+        nw.set_table(table_sync)
+        asyncio.run(nw.write_records(ds))
+        nw.set_table(table_async)
+        nw.write_records_sync(ds)
+
+    def test_complex_upload(self):
+        tsv = TsvReader(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_input/chinese_sample.tsv"}, "chinese_sample"))
+        map_cols = {
+            "Tags": DataColumn(COLUMN_TYPE.MULTI_SELECT, "Tags"),
+            "Last Created": DataColumn(COLUMN_TYPE.DATE, "Last Created"),
+            "English": DataColumn(COLUMN_TYPE.TEXT, "English"),
+            "Zhuyin": DataColumn(COLUMN_TYPE.TEXT, "Zhuyin"),
+            "Subtags": DataColumn(COLUMN_TYPE.MULTI_SELECT, "Subtags"),
+            "Examples & Usage": DataColumn(COLUMN_TYPE.TEXT, "Examples & Usage"),
+            "Timestamp": DataColumn(COLUMN_TYPE.DATE, "Timestamp"),
+            "Pinyin": DataColumn(COLUMN_TYPE.TEXT, "Pinyin"),
+            "Hanzi": DataColumn(COLUMN_TYPE.TEXT, "Hanzi")
+        }
+        dm = DataMap(map_cols, DataSetFormat(time_formats=[]))
+        ds = tsv.read_records_sync(mapping=dm).records
+        nw = NotionWriter(self.secret)
+        parent_id = self.test_page
+
+        table_all = nw.create_table(ds,TableSpec(DATA_SOURCE.NOTION, {"parent_id": parent_id}, "API Test Chinese Upload - Full"))
+        nw.set_table(table_all)
+
+        page_size = 5
+        current_page = 1
+        total_pages = math.ceil(float(len(ds.records)) / float(page_size))
+        print ("Writing page " + str(current_page) + " of " + str(total_pages)) 
+        handle = nw.write_records_sync(ds, 5)
+
+        while handle.params["last_written"] != -1:
+            current_page += 1
+            print ("Writing page " + str(current_page) + " of " + str(total_pages))
+            handle = nw.write_records_sync(ds, 5, handle)
+
+        # Last Created	English	Zhuyin	Subtags	Examples & Usage	Timestamp	Pinyin	Hanzi
 
 class TestTsvSync(unittest.TestCase):
     # def test_basic_read(self):

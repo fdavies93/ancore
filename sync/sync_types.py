@@ -28,7 +28,7 @@ class SyncHandle:
     ''' Maintains position in a read or write operation. Returned from read and write operations. '''
     records: DataSet
     source: DATA_SOURCE
-    handle: object = None # always starts as a None object; later declared
+    handle: object # always starts as a None object; later declared
 
     def close(self):
         ''' Closes the handle. To be implemented by derived objects.'''

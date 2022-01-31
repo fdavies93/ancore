@@ -20,7 +20,8 @@ def make_property_select(ds : DataSet, col_name: str, uvs : Dict[str, Set[str]])
     unique_values = uvs[col_name]
     options = []
     for i, uv in enumerate(unique_values):
-        options.append ({"name": uv, "id": str(uuid.uuid4()), "color": select_color_list[i % len(select_color_list)]})
+        if uv != "" and uv != None:
+            options.append ({"name": uv, "id": str(uuid.uuid4()), "color": select_color_list[i % len(select_color_list)]})
     
     key = "multi_select"
     if ds.get_column(col_name).type == COLUMN_TYPE.SELECT:
@@ -57,7 +58,8 @@ def make_value_select(id : str, value : str):
 def make_value_multiselect(id : str, value: List[str]):
     options = []
     for option in value:
-        options.append( {"name": option} )
+        if option != "" and option != None:
+            options.append( {"name": option} )
     return {
         "multi_select": options
     }
@@ -100,11 +102,13 @@ def get_notion_property_ids(result) -> Dict[str, str]:
 @dataclass
 class NotionSyncHandle(SyncHandle):
     handle : str
+    params : dict = field(default_factory=dict)
 
     def __init_subclass__(cls) -> None:
         return super().__init_subclass__()
     
     def __enter__(self):
+        self.params["last_written"] = -1
         # No setup required right now.
         return self
 
@@ -158,20 +162,52 @@ class NotionWriter(SourceWriter):
         spec_out.parameters["columns"] = get_notion_property_ids(json)
         return spec_out
 
-    def _write_records(self, dataset : DataSet, limit: int = -1, next_iterator : NotionSyncHandle = None) -> NotionSyncHandle:
-        for record in dataset.records:
-            write_result = self._write_record(dataset, record)
-            if write_result.status_code != 200:
-                raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, message=write_result.json)
+    async def write_records(self, dataset : DataSet, limit: int = -1, next_iterator : NotionSyncHandle = None) -> NotionSyncHandle:
+        return self._write_records(dataset, limit, next_iterator)
 
-    def _write_record(self, dataset : DataSet, record : DataRecord):
+    def write_records_sync(self, dataset : DataSet, limit: int = -1, next_iterator : NotionSyncHandle = None) -> NotionSyncHandle:
+        return self._write_records(dataset, limit, next_iterator)
+
+    def _write_records(self, dataset : DataSet, limit: int = -1, next_iterator : NotionSyncHandle = None) -> NotionSyncHandle:
+        results = []
+
+        record_count = len(dataset.records)
+
+        start_i : int = 0
+        if next_iterator != None:
+            last_written = next_iterator.params["last_written"]
+            if last_written < record_count and last_written >= 0:
+                start_i = last_written
+
+        end_i : int = start_i + limit
+        
+        if end_i > record_count or limit < 0:
+            end_i = record_count
+        
+        last_written_out = 0
+        for i in range(start_i, end_i):
+            record = dataset.records[i]
+            try:
+                write_result = self._write_record(dataset, record)
+                results.append(write_result)
+                last_written_out = i
+            except SyncError as err:
+                print(err)
+
+        if last_written_out >= record_count - 1:
+            last_written_out = -1
+            
+        return NotionSyncHandle(results, DATA_SOURCE.NOTION, "", params={"last_written": last_written_out})            
+
+    def _write_record(self, dataset : DataSet, record : DataRecord) -> dict:
         property_dict = {}
         for col in dataset.columns:
             col_id = self.table.parameters["columns"][col.name]
             if col.name == self.table.parameters["primary_key"]:
                 property_dict[col.name] = make_value_title( col_id, record[col.name] )
             else:
-                property_dict[col.name] = NotionWriter.make_value_strategies[col.type]( col_id, record[col.name] )
+                if record[col.name] != None:
+                    property_dict[col.name] = NotionWriter.make_value_strategies[col.type]( col_id, record[col.name] )
 
         data = {
             "parent": {
@@ -181,7 +217,10 @@ class NotionWriter(SourceWriter):
             "properties": property_dict
         }
 
-        return requests.post("https://api.notion.com/v1/pages", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
+        res = requests.post("https://api.notion.com/v1/pages", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
+        if res.status_code != 200:
+            raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
+        return res.json()
 
     @staticmethod
     def extract_properties(ds : DataSet):
@@ -324,7 +363,7 @@ class NotionReader(SourceReader):
         else: return ""
 
     def _map_notion_date(self, prop):
-        return prop["date"]
+        return datetime.fromisoformat(prop["date"]["start"])
 
     def _map_notion_multiselect(self, prop):
         return [ r["name"] for r in prop["multi_select"] ]
