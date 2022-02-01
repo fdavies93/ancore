@@ -202,6 +202,10 @@ class NotionWriter(SourceWriter):
 
     def _write_record(self, dataset : DataSet, record : DataRecord) -> dict:
         property_dict = {}
+
+        if self.table == None:
+            raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "Table not set in NotionWriter._write_record.")
+
         for col in dataset.columns:
             col_id = self.table.parameters["columns"][col.name]
             if col.name == self.table.parameters["primary_key"]:
@@ -223,13 +227,42 @@ class NotionWriter(SourceWriter):
             raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
         return res.json()
 
+
+    def update_columns(self, dataset : DataSet, columns : list[str], title_column : str = None):
+        ''' Update database table with columns from dataset. This both appends new columns and modifies existing columns. '''
+        
+        if self.table == None:
+            raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "Table not set in NotionWriter.append_columns")
+
+        database_id = self.table.parameters["id"]
+
+        property_object = NotionWriter.extract_properties(dataset, infer_title=False, title_column=title_column)
+
+        column_names = set(columns)
+
+        # filter properties not in the list
+        data = dict()
+        data["properties"] = dict()
+        
+        for k, v in property_object.items():
+            if k in column_names:
+                data["properties"][k] = v
+
+        res = requests.patch("https://api.notion.com/v1/databases/" + database_id, json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
+        
+        if res.status_code != 200:
+            raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
+
+        return res.json()
+
     @staticmethod
-    def extract_properties(ds : DataSet):
+    def extract_properties(ds : DataSet, infer_title = True, title_column = None) -> dict:
         out = {}
         uniques = ds.get_uniques()
         title_created = False
+
         for column in ds.columns:
-            if column.type == COLUMN_TYPE.TEXT and not title_created:
+            if ((infer_title and not title_created) or (not infer_title and title_column == column.name)) and column.type == COLUMN_TYPE.TEXT:
                 out[column.name] = make_property_title(ds, column.name, uniques)
                 title_created = True
             else:

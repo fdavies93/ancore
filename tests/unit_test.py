@@ -136,17 +136,6 @@ class NotionTest(unittest.TestCase):
             print ("Writing page " + str(current_page) + " of " + str(total_pages))
             handle = nw.write_records_sync(ds, 5, handle)
 
-    def test_big_chinese(self):
-        reader = NotionReader(self.secret)
-
-        tbl : TableSpec = next(filter(lambda tb : tb.parameters["id"].replace('-','') == "82f0fc14dde2486e9630c10cbc860b70", reader.get_tables()))
-
-        reader.set_table(tbl)
-        ds : DataSet = reader.read_all_records_sync(100)
-        # ds.format = DataSetFormat(time_formats = ["%b %d, %Y %I:%M %p"]) # make it pretty-print dates - try commenting this out for default ISO dates
-        tsv = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_output/chinese_sample_large.tsv"}, "chinese_sample_large"))
-        tsv.create_table_sync(ds)
-
     def test_file_merge(self):
         tsv_in = TsvReader(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_input/chinese_sample.tsv"}, "chinese_sample"))
         map_cols = {
@@ -164,17 +153,10 @@ class NotionTest(unittest.TestCase):
         ds_tsv = tsv_in.read_all_records_sync(1000)
         ds_tsv : DataSet = ds_tsv.remap(dm).op_returns["remapped_data"]
 
-        fil = lambda col : col.name == "Last Created"
-
-        print( next( filter(fil, ds_tsv.columns) ) )
-        
-
         nr = NotionReader(self.secret)
         nr.set_table(self.get_test_table(nr))
         ds_notion = nr.read_all_records_sync(100)
 
-        print( next( filter(fil, ds_notion.columns) ) )
-        
         ds_outer_merge = merge(ds_tsv,ds_notion,"Hanzi","Hanzi")
         ds_inner_merge = merge(ds_tsv,ds_notion,"Hanzi", "Hanzi", left_join=False, right_join=False)
         ds_left_merge = merge(ds_tsv,ds_notion,"Hanzi", "Hanzi", right_join=False, inner_join=False)
@@ -191,6 +173,47 @@ class NotionTest(unittest.TestCase):
 
         tsv_write = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_output/notion_inner_merge.tsv"}, "inner_merge_sample"))
         tsv_write.create_table_sync(ds_inner_merge)
+
+    def test_update_columns(self):
+        tsv_in = TsvReader(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_input/chinese_sample.tsv"}, "chinese_sample"))
+        map_cols = {
+            "Tags": DataColumn(COLUMN_TYPE.MULTI_SELECT, "Tags"),
+            "Last Created": DataColumn(COLUMN_TYPE.DATE, "Last Created"),
+            "English": DataColumn(COLUMN_TYPE.TEXT, "English"),
+            "Zhuyin": DataColumn(COLUMN_TYPE.TEXT, "Zhuyin"),
+            "Subtags": DataColumn(COLUMN_TYPE.MULTI_SELECT, "Subtags"),
+            "Examples & Usage": DataColumn(COLUMN_TYPE.TEXT, "Examples & Usage"),
+            "Timestamp": DataColumn(COLUMN_TYPE.DATE, "Timestamp"),
+            "Pinyin": DataColumn(COLUMN_TYPE.TEXT, "Pinyin"),
+            "Hanzi": DataColumn(COLUMN_TYPE.TEXT, "Hanzi")
+        }
+        dm = DataMap(map_cols, DataSetFormat(time_formats=[]))
+        ds_tsv = tsv_in.read_all_records_sync(1000)
+        ds_tsv : DataSet = ds_tsv.remap(dm).op_returns["remapped_data"]
+        
+        nw = NotionWriter(self.secret)
+        parent_id = self.test_page
+
+        table_10 = nw.create_table(ds_tsv,TableSpec(DATA_SOURCE.NOTION, {"parent_id": parent_id}, "API Test Update Columns"))
+        nw.set_table(table_10)
+        nw.write_records_sync(ds_tsv, 10)
+        
+        new_cols = [
+            DataColumn(COLUMN_TYPE.TEXT, "test_column_text"),
+            DataColumn(COLUMN_TYPE.DATE, "test_column_date"),
+            DataColumn(COLUMN_TYPE.SELECT, "test_column_select"),
+            DataColumn(COLUMN_TYPE.MULTI_SELECT, "test_column_multi_select")
+        ]
+
+        for col in new_cols:
+            ds_tsv.add_column(col)
+
+        ds_tsv.change_column_type("Timestamp", COLUMN_TYPE.TEXT)
+        ds_tsv.change_column_type("Tags", COLUMN_TYPE.TEXT)
+
+        col_list = ["test_column_text", "test_column_date", "test_column_select", "test_column_multi_select", "Timestamp", "Tags"]
+
+        nw.update_columns(ds_tsv, col_list)
 
 
 class TestTsvSync(unittest.TestCase):
