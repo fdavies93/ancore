@@ -9,9 +9,24 @@ It also lets you convert between different types of data columns which are commo
 
 Provides the data manipulation and synchronisation layers which [Anchor](https://github.com/fdavies93/anki-anchor) builds on.
 
+Getting started is easy:
+
+```
+api_key = "YOUR_NOTION_API_KEY"
+db_id = "YOUR_NOTION_DB_ID"
+
+reader = NotionReader(api_key)
+table = reader.get_table(db_id)
+reader.set_table(table)
+dataset = reader.read_records_sync(10).records
+
+writer = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "FILE PATH HERE"}, "test_read"))
+writer.create_table_sync(dataset)
+```
+
 ### Currently Supported Sync Targets
 
-* Notion (nearly done)
+* Notion
 * JSON files
 * .TSV files
 

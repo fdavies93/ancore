@@ -41,6 +41,15 @@ class NotionTest(unittest.TestCase):
         
         return test_table
 
+    def test_get_table(self):
+        reader = NotionReader(self.secret)
+        table = reader.get_table(self.notion_db)
+        reader.set_table(table)
+        dataset = reader.read_records_sync(10).records
+
+        writer = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_output/notion_get_table.tsv"}, "notion_get_table"))
+        writer.create_table_sync(dataset)
+
     def test_get_tables(self):
         reader = NotionReader(self.secret)
         reader.get_tables()

@@ -333,6 +333,13 @@ class NotionReader(SourceReader):
             raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "API key not set in NotionReader.")
         return self.get_databases(self.api_key)
 
+    def get_table(self, id:str) -> TableSpec:
+        tables = self.get_tables()
+        for table in tables:
+            if table.parameters["id"].replace('-','') == id.replace('-',''): # normalise ids
+                return table
+        return None
+
     def get_databases(self, api_key : str):
         data = { "filter": {"property": "object", "value": "database"} }
         res = requests.post("https://api.notion.com/v1/search", json=data, auth=BearerAuth(api_key), headers={"Notion-Version": notion_version})
