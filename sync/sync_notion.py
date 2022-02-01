@@ -194,10 +194,11 @@ class NotionWriter(SourceWriter):
             except SyncError as err:
                 print(err)
 
+        done = False
         if last_written_out >= record_count - 1:
-            last_written_out = -1
-            
-        return NotionSyncHandle(results, DATA_SOURCE.NOTION, "", params={"last_written": last_written_out})            
+            done = True
+
+        return NotionSyncHandle(results, DATA_SOURCE.NOTION, "", done, params={"last_written": last_written_out})            
 
     def _write_record(self, dataset : DataSet, record : DataRecord) -> dict:
         property_dict = {}
@@ -312,10 +313,13 @@ class NotionReader(SourceReader):
         res = requests.post(url, json=data, auth=BearerAuth(api_key), headers={"Notion-Version": notion_version})
         json = res.json()
         it = None
+        done = False
         if json["has_more"]:
             it = json["next_cursor"]
+        else:
+            done = True
         records = [ self._map_record(record, column_info) for record in json["results"] ]
-        return NotionSyncHandle( DataSet(column_info, records), DATA_SOURCE.NOTION, it )
+        return NotionSyncHandle( DataSet(column_info, records), DATA_SOURCE.NOTION, handle=it, done=done )
 
     def get_record_types(self):
         pass
@@ -363,6 +367,10 @@ class NotionReader(SourceReader):
         else: return ""
 
     def _map_notion_date(self, prop):
+        if prop == None:
+            return None
+        elif prop["date"] == None:
+            return None
         return datetime.fromisoformat(prop["date"]["start"])
 
     def _map_notion_multiselect(self, prop):

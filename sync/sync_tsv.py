@@ -100,12 +100,14 @@ class TsvReader(SourceReader):
                 f = next_iterator.handle
                 reader = csv.DictReader(f, delimiter="\t", fieldnames=text_dataset.column_names)
 
+            done = False
             cur_it = 0
             while cur_it < limit or limit == -1:
                 cur_record = next(reader, None)
                 if cur_record == None:
                     f.close()
                     f = None
+                    done = True
                     break
                 text_dataset.add_record(cur_record)
                 cur_it += 1
@@ -114,7 +116,7 @@ class TsvReader(SourceReader):
         
         if mapping is not None: ds = text_dataset.remap(mapping).op_returns["remapped_data"]
         else: ds = text_dataset
-        return TsvSyncHandle(ds, DATA_SOURCE.TSV, f)
+        return TsvSyncHandle(ds, DATA_SOURCE.TSV, f, done)
 
     async def read_records(self, limit : int = -1, next_iterator = None, mapping : DataMap = None) -> TsvSyncHandle:
         return self._read_records(limit, next_iterator, mapping)

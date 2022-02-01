@@ -4,6 +4,17 @@ from os.path import *
 from typing import Callable
 import json
 
+class JsonSyncHandle(SyncHandle):
+    def __init_subclass__(cls) -> None:
+        return super().__init_subclass__()
+    
+    def __enter__(self):
+        # No setup required right now.
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        pass
+
 class JsonWriter(SourceWriter):
     ''' Write records to a JSON file. '''
     # records are basically written as-is, though date columns are transformed to text
@@ -77,7 +88,13 @@ class JsonReader(SourceReader):
             raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "No path parameter found when initialising JsonReader.")
         self.path = join(os.getcwd(), table_spec.parameters["file_path"])
     
-    async def read_records(self, limit : int = -1, next_iterator = None) -> DataSet:
+    async def read_records(self, limit: int = -1, next_iterator: SyncHandle = None) -> SyncHandle:
+        return self._read_records(limit, next_iterator)
+
+    def read_records_sync(self, limit: int = -1, next_iterator: SyncHandle = None) -> SyncHandle:
+        return self._read_records(limit, next_iterator)
+        
+    def _read_records(self, limit : int = -1, next_iterator = None) -> DataSet:
         # open file
         try:
             with open(self.path, 'r', encoding="utf-8") as f:
@@ -104,4 +121,4 @@ class JsonReader(SourceReader):
         for date_col in date_cols:
             ds.change_column_type(date_col, COLUMN_TYPE.DATE) # reformat all dates in the file to actually be datetime objects
 
-        return ds
+        return JsonSyncHandle(ds, DATA_SOURCE.JSON, None, True) # there's no meaningful handle available for JSON, so just dump everything out

@@ -29,6 +29,7 @@ class SyncHandle:
     records: DataSet
     source: DATA_SOURCE
     handle: object # always starts as a None object; later declared
+    done: bool
 
     def close(self):
         ''' Closes the handle. To be implemented by derived objects.'''
@@ -50,20 +51,41 @@ class SourceReader(ABC):
     async def read_record(self):
         '''Get a given record.'''
 
-    async def read_records(self, limit : int = -1, next_iterator : SyncHandle = None):
+    async def read_all_records(self, page_size) -> DataSet:
+        ''' Read all records. '''
+        return self._read_all_records(page_size)
+
+    def read_all_records_sync(self, page_size) -> DataSet:
+        ''' Read all records synchronously. '''
+        return self._read_all_records(page_size)
+
+    def _read_all_records(self, page_size):
+        handle : SyncHandle = self.read_records_sync(page_size)
+        ds_out = handle.records
+        while not handle.done:
+            handle = self.read_records_sync(page_size, handle)
+            ds_out.add_records(handle.records.records)
+        return ds_out
+
+    async def read_records(self, limit : int = -1, next_iterator : SyncHandle = None) -> SyncHandle:
         ''' Get multiple records. '''
+        raise NotImplementedError()
     
-    def read_records_sync(self, limit: int = -1, next_iterator : SyncHandle = None):
+    def read_records_sync(self, limit: int = -1, next_iterator : SyncHandle = None) -> SyncHandle:
         ''' Get records synchronously. '''
+        raise NotImplementedError()
 
     async def get_columns(self):
         '''Get columns with their data type as a standardised type.'''
+        raise NotImplementedError()
 
     async def get_tables(self):
         '''Get a list of tables. In Anki's case this is a list of card_types and how they intersect with decks.'''
+        raise NotImplementedError()
     
     async def get_record_types(self):
         '''Get record subtypes. Mostly a workaround for Anki not having "databases" but decks and card types.'''
+        raise NotImplementedError()
 
 class SourceWriter(ABC):
     '''Write data from a Python record to some source.'''
