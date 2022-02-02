@@ -99,13 +99,13 @@ class NotionTest(unittest.TestCase):
         nw.set_table(tbl)
 
         ds = nr.read_records_sync(10).records
-        
-        print (ds.records[0].asdict()) # lets me recover lost data more easily
 
         ds.records[0]["Examples & Usage"] = "EXAMPLE UPDATE. Hopefully it's visible..."
-    
-        nw.update_record(ds.records[0], ds, "Hanzi", ds.records[0]["Hanzi"])
+        ds.records[0]["Subtags"] = ["time-relative"]
+        ds.records[0]["Last Created"] = datetime(1999,2,9,4,0,5)
+        ds.records[0]["Tags"] = ["grammar","routine"]
 
+        nw.update_record(ds.records[0], ds, "Hanzi", ds.records[0]["Hanzi"])
 
     def test_get_records_async(self):
         reader = NotionReader(self.secret)
@@ -116,6 +116,16 @@ class NotionTest(unittest.TestCase):
         ds : DataSet = asyncio.run(self.awaitable_read(reader))
         ds.format = DataSetFormat(time_formats = ["%b %d, %Y %I:%M %p"]) # make it pretty-print dates - try commenting this out for default ISO dates
         tsv = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_output/notion_read_all_async.tsv"}, "notion_read_all_async"))
+        tsv.create_table_sync(ds)
+
+    def test_get_records_with_ids(self):
+        reader = NotionReader(self.secret)
+        tbl : TableSpec = self.get_test_table(reader)
+        reader.set_table(tbl)
+
+        ds : DataSet = reader.read_records_sync(10,include_ids=True).records
+
+        tsv = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_output/notion_read_10_with_ids.tsv"}, "notion_read_10_with_ids"))
         tsv.create_table_sync(ds)
 
     def test_create_table(self):

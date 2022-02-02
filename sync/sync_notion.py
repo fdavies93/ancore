@@ -1,3 +1,4 @@
+from turtle import update
 from .sync_types import *
 from ..dataset import COLUMN_TYPE, DataSet
 import requests
@@ -256,6 +257,83 @@ class NotionWriter(SourceWriter):
             raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
         return res.json()
 
+
+    def update_table(self, left : DataSet, primary_key : str, loop_callback):
+        nr = NotionReader(self.api_key)
+        nr.set_table(self.table)
+
+        # print("Starting to read records from dataset.")
+        handle = nr.read_records_sync(100, include_ids=True)
+        right = handle.records
+
+        while not handle.done:
+            handle = nr.read_records_sync(100, next_iterator=handle, include_ids=True)
+            right.add_records(handle.records)
+
+        lki = build_key_index(left,primary_key)
+
+        full_outer_records = merge(left, right, primary_key, primary_key, overwrite=True)
+        left_col_names = set(left.column_names)
+        right_col_names = set(right.column_names)
+        new_col_names = list(left_col_names.difference(right_col_names))
+
+        # print("Found " + len(new_records.records) + " new records and " + len(update_records.records) + " records to update.")
+    
+        if ("notion_page_id" in new_col_names):
+            new_col_names.remove("notion_page_id")
+
+        # print("Updating columns.")
+        self.update_columns(left, new_col_names, self.table.parameters["primary_key"])
+
+        ncs = nr.get_columns()
+        ncs.append( DataColumn(COLUMN_TYPE.TEXT, "notion_page_id") )
+        notion_columns = nr.get_columns_as_dict()
+
+        new_records = DataSet(ncs)
+        update_records = DataSet(ncs)
+
+        for record in full_outer_records.records:
+            if record["notion_page_id"] == None:
+                new_records.add_record(record)
+            elif record[primary_key] in lki:
+                update_records.add_record(record)
+
+        new_records.drop_column("notion_page_id")
+
+        # print("Writing " + str(len(new_records.records)) + " new records.")
+        self.write_records_sync(new_records)
+
+        # print ("Starting update of " + str(len(update_records.records)) + " records.")
+        for record in update_records.records:
+            self.update_record_by_id(record, update_records, record["notion_page_id"], notion_columns)
+
+    def update_record_by_id(self, record : DataRecord, dataset : DataSet, id : str, notion_columns : dict[str,DataColumn] = None):
+        if notion_columns == None:
+            nr = NotionReader(self.api_key)
+            nr.set_table(self.table)
+            n_cols = nr.get_columns_as_dict()
+        else:
+            n_cols = notion_columns
+
+        properties = {}
+
+        for column in dataset.columns:
+            if column.name not in n_cols:
+                continue
+            if column.type != n_cols[column.name].type:
+                continue
+            col_id = self.table.parameters["columns"][column.name]
+            if (self.table.parameters["primary_key"] == column.name):
+                properties[column.name] = make_value_title(col_id, record[column.name])
+            else: 
+                properties[column.name] = NotionWriter.make_value_strategies[column.type](col_id,record[column.name])
+
+        data = {"properties": properties}
+
+        res = requests.patch(f"https://api.notion.com/v1/pages/{id}", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
+        if res.status_code != 200:
+                raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
+
     def update_record(self, record : DataRecord, dataset : DataSet, key_column : str, key_val : object, update_all : bool = True):
         ''' Note: has complex behaviour where two records share the same key column. '''
         nr = NotionReader(self.api_key)
@@ -318,7 +396,9 @@ class NotionWriter(SourceWriter):
         if res.status_code != 200:
             raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
 
-        return res.json()
+        json = res.json()
+
+        self.table.parameters["columns"] = get_notion_property_ids(json)
 
     @staticmethod
     def extract_properties(ds : DataSet, infer_title = True, title_column = None) -> dict:
@@ -377,16 +457,16 @@ class NotionReader(SourceReader):
             out_dict[col.name] = col
         return out_dict
 
-    def _read_records(self, limit : int = -1, next_iterator : NotionSyncHandle = None, mapping : DataMap = None) -> NotionSyncHandle:
+    def _read_records(self, limit : int = -1, next_iterator : NotionSyncHandle = None, mapping : DataMap = None, include_ids : bool = False) -> NotionSyncHandle:
         if self.table == None:
             raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "No table set when reading records from Notion.")
-        return self.get_records(self.api_key, self.table.parameters["id"], self.get_columns(), number=limit, iterator=next_iterator)
+        return self.get_records(self.api_key, self.table.parameters["id"], self.get_columns(), number=limit, iterator=next_iterator, include_ids = include_ids)
 
-    async def read_records(self, limit: int = -1, next_iterator: NotionSyncHandle = None, mapping: DataMap = None) -> NotionSyncHandle:
-        return self._read_records(limit = limit, next_iterator = next_iterator, mapping = mapping)
+    async def read_records(self, limit: int = -1, next_iterator: NotionSyncHandle = None, mapping: DataMap = None, include_ids : bool = False) -> NotionSyncHandle:
+        return self._read_records(limit = limit, next_iterator = next_iterator, mapping = mapping, include_ids = include_ids)
 
-    def read_records_sync(self, limit: int = -1, next_iterator: NotionSyncHandle = None, mapping: DataMap = None) -> NotionSyncHandle:
-        return self._read_records(limit = limit, next_iterator = next_iterator, mapping = mapping)
+    def read_records_sync(self, limit: int = -1, next_iterator: NotionSyncHandle = None, mapping: DataMap = None, include_ids : bool = False) -> NotionSyncHandle:
+        return self._read_records(limit = limit, next_iterator = next_iterator, mapping = mapping, include_ids = include_ids)
 
     def get_table_parents(self) -> "list[TableSpec]":
         ''' Gets possible parents for a table - i.e. pages that are available in Notion. '''
@@ -424,7 +504,7 @@ class NotionReader(SourceReader):
         json = res.json()
         return [self._parse_database_result(x) for x in json["results"]]
 
-    def get_records(self, api_key: str, table_id: str, column_info: list, number=100, iterator : NotionSyncHandle = None, record_filter : dict = None) -> NotionSyncHandle:
+    def get_records(self, api_key: str, table_id: str, column_info: list, number=100, iterator : NotionSyncHandle = None, record_filter : dict = None, include_ids=False) -> NotionSyncHandle:
         json = self.query_database(api_key, table_id, number, iterator, record_filter)
         it = None
         done = False
@@ -432,13 +512,18 @@ class NotionReader(SourceReader):
             it = json["next_cursor"]
         else:
             done = True
-        records = [ self._map_record(record, column_info) for record in json["results"] ]
-        return NotionSyncHandle( DataSet(column_info, records), DATA_SOURCE.NOTION, handle=it, done=done )
+        records = [ self._map_record(record, column_info, include_ids) for record in json["results"] ]
 
-    def find_records(self, key_col : str, key_val : object) -> NotionSyncHandle:
+        final_info = copy.deepcopy(column_info)
+        if include_ids:
+            final_info.append( DataColumn(COLUMN_TYPE.TEXT, "notion_page_id") )
+
+        return NotionSyncHandle( DataSet(final_info, records), DATA_SOURCE.NOTION, handle=it, done=done )
+
+    def find_records(self, key_col : str, key_val : object, include_ids : bool = False) -> NotionSyncHandle:
         col_info = self.get_columns()
         json = self._find_records_raw(key_col, key_val, col_info)
-        records = [ self._map_record(record, col_info) for record in json["results"]]
+        records = [ self._map_record(record, col_info, include_ids) for record in json["results"]]
         return NotionSyncHandle( DataSet(col_info, records), DATA_SOURCE.NOTION, "", done=True )
 
     def find_record_ids(self, key_col : str, key_val : object) -> list[str]:
@@ -489,7 +574,7 @@ class NotionReader(SourceReader):
             col_type = COLUMN_TYPE.TEXT
         return DataColumn(col_type, column_name)
     
-    def _map_record(self, record:dict, columns:list):
+    def _map_record(self, record:dict, columns:list, include_ids:bool=False):
         out_dict = {}
         column_names = [ col.name for col in columns ]
         for k in column_names:
@@ -502,6 +587,8 @@ class NotionReader(SourceReader):
                 else: out_dict[k] = None # If we don't know how to handle the type, just return null.
             else:
                 out_dict[k] = None
+        if include_ids:
+            out_dict["notion_page_id"] = record["id"]
         return out_dict
 
     def _map_notion_text(self, prop):

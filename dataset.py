@@ -70,7 +70,9 @@ class DataRecord:
     _fields: dict # always a dict where index is column index
 
     def __getitem__(self,key):
-        i = self._column_names[key]
+        i = self._column_names.get(key)
+        if i == None:
+            return None
         return self._fields[i]
 
     def __setitem__(self, key, value):
@@ -226,6 +228,12 @@ class DataSet:
 
     def get_column(self, key : str) -> DataColumn:
         return self._columns[self.get_column_index(key)]
+
+    def get_columns_as_dict(self) -> dict[DataColumn]:
+        out_dict = dict()
+        for col in self.columns:
+            out_dict[col.name] = col
+        return out_dict
 
     def rename_column(self, old_name, new_name):
         # print (self._column_names)

@@ -17,6 +17,16 @@ class SYNC_ERROR_CODE(IntEnum):
     INCORRECT_SOURCE = 2,
     REQUEST_REJECTED = 3
 
+class SYNC_STATUS_CODE(IntEnum):
+    READING_SOURCE = 0,
+    WRITING_SOURCE = 1
+
+class SyncStatus:
+    total_records : int
+    records_synced : int
+    status : SYNC_STATUS_CODE
+
+
 @dataclass
 class TableSpec:
     source : DATA_SOURCE
