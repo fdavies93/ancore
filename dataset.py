@@ -684,7 +684,7 @@ def new_append(left: DataSet, right: DataSet, left_join: bool = True, right_join
     ds.add_records(right.records)
     return ds
         
-def build_key_index(ds:DataSet, key_col):
+def build_key_index(ds:DataSet, key_col : str):
     index = {}
     for r in ds.records:
         if r[key_col] not in index:

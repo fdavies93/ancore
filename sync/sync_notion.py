@@ -73,6 +73,35 @@ def make_value_date(id : str, value : datetime):
         }
     }
 
+def make_filter_text(property_name: str, value : str):
+    return {
+        "property": property_name,
+        "text": {
+            "equals": value
+        }
+    }
+
+def make_filter_select(property_name: str, value : str):
+    return { 
+        "property": property_name,
+        "select": {
+            "equals": value
+        }
+    }
+
+def make_filter_multiselect(property_name: str, value : list[str]):
+    out_filter = { "and": [] }
+    for v in value:
+        out_filter["and"].append( { "property": property_name, "multiselect": { "contains": v } } )
+
+def make_filter_date(property_name: str, value : datetime):
+    return {
+        "property": property_name,
+        "date": {
+            "equals": value.astimezone().replace(microsecond=0).isoformat()
+        }
+    }
+
 def make_annotation(bold : bool = False, italic : bool = False, strikethrough: bool = False, underline : bool = False, code : bool = False, color : str = "default"):
         out = {
             "bold": bold, 
@@ -227,6 +256,42 @@ class NotionWriter(SourceWriter):
             raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
         return res.json()
 
+    def update_record(self, record : DataRecord, dataset : DataSet, key_column : str, key_val : object, update_all : bool = True):
+        ''' Note: has complex behaviour where two records share the same key column. '''
+        nr = NotionReader(self.api_key)
+        nr.set_table(self.table)
+
+        record_ids = nr.find_record_ids(key_column, key_val)
+        if len(record_ids) == 0:
+            raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "Couldn't find record in NotionReader.update_record.")
+
+        notion_columns = nr.get_columns_as_dict()
+
+        properties = {}
+
+        for column in dataset.columns:
+            if column.name not in notion_columns:
+                continue
+            if column.type != notion_columns[column.name].type:
+                continue
+            col_id = self.table.parameters["columns"][column.name]
+            if (self.table.parameters["primary_key"] == column.name):
+                properties[column.name] = make_value_title(col_id, record[column.name])
+            else: 
+                properties[column.name] = NotionWriter.make_value_strategies[column.type](col_id,record[column.name])
+
+        data = {"properties": properties}
+
+        if update_all and len(record_ids) > 1:
+            for id in record_ids:
+                res = requests.patch(f"https://api.notion.com/v1/pages/{id}", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
+                if res.status_code != 200:
+                    raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
+        else:
+            id = record_ids[0]
+            res = requests.patch(f"https://api.notion.com/v1/pages/{id}", json=data, auth=BearerAuth(self.api_key), headers={"Notion-Version": notion_version})
+            if res.status_code != 200:
+                    raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
 
     def update_columns(self, dataset : DataSet, columns : list[str], title_column : str = None):
         ''' Update database table with columns from dataset. This both appends new columns and modifies existing columns. '''
@@ -290,6 +355,12 @@ class NotionReader(SourceReader):
             'date': self._map_notion_date,
             'created_time': self._map_notion_created_time
         }
+        self.filter_strategies = {
+            COLUMN_TYPE.TEXT: make_filter_text,
+            COLUMN_TYPE.SELECT: make_filter_select,
+            COLUMN_TYPE.MULTI_SELECT: make_filter_multiselect,
+            COLUMN_TYPE.DATE: make_filter_date
+        }
 
     def set_table(self, table : TableSpec):
         self.table = table
@@ -298,6 +369,13 @@ class NotionReader(SourceReader):
         if self.table == None:
             raise SyncError(SYNC_ERROR_CODE.PARAMETER_NOT_FOUND, "No table set when reading records from Notion.")
         return self.get_column_spec(self.api_key, self.table.parameters["id"])
+
+    def get_columns_as_dict(self) -> dict[str,DataColumn]:
+        columns = self.get_columns()
+        out_dict = dict()
+        for col in columns:
+            out_dict[col.name] = col
+        return out_dict
 
     def _read_records(self, limit : int = -1, next_iterator : NotionSyncHandle = None, mapping : DataMap = None) -> NotionSyncHandle:
         if self.table == None:
@@ -346,12 +424,8 @@ class NotionReader(SourceReader):
         json = res.json()
         return [self._parse_database_result(x) for x in json["results"]]
 
-    def get_records(self, api_key: str, id: str, column_info: list, number=100, iterator : NotionSyncHandle = None) -> NotionSyncHandle:
-        url = f"https://api.notion.com/v1/databases/{id}/query"
-        data = {"page_size": number}
-        if iterator is not None: data["start_cursor"] = iterator.handle
-        res = requests.post(url, json=data, auth=BearerAuth(api_key), headers={"Notion-Version": notion_version})
-        json = res.json()
+    def get_records(self, api_key: str, table_id: str, column_info: list, number=100, iterator : NotionSyncHandle = None, record_filter : dict = None) -> NotionSyncHandle:
+        json = self.query_database(api_key, table_id, number, iterator, record_filter)
         it = None
         done = False
         if json["has_more"]:
@@ -361,6 +435,39 @@ class NotionReader(SourceReader):
         records = [ self._map_record(record, column_info) for record in json["results"] ]
         return NotionSyncHandle( DataSet(column_info, records), DATA_SOURCE.NOTION, handle=it, done=done )
 
+    def find_records(self, key_col : str, key_val : object) -> NotionSyncHandle:
+        col_info = self.get_columns()
+        json = self._find_records_raw(key_col, key_val, col_info)
+        records = [ self._map_record(record, col_info) for record in json["results"]]
+        return NotionSyncHandle( DataSet(col_info, records), DATA_SOURCE.NOTION, "", done=True )
+
+    def find_record_ids(self, key_col : str, key_val : object) -> list[str]:
+        col_info = self.get_columns()
+        json = self._find_records_raw(key_col, key_val, col_info)
+        out_ids : list[str] = []
+        for page in json["results"]:
+            out_ids.append(page["id"])
+        return out_ids
+
+    def _find_records_raw(self, key_col : str, key_val : object, columns : list[DataColumn]) -> dict:
+        data_column = next( filter(lambda col : col.name == key_col, columns))
+        if isinstance(key_val, str):
+            key_val = key_val.strip()
+        fil = self.filter_strategies[data_column.type](key_col, key_val)
+        
+        return self.query_database(self.api_key, self.table.parameters["id"], record_filter=fil)
+
+    def query_database(self, api_key:str, table_id:str, number=100, iterator : NotionSyncHandle = None, record_filter : dict = None) -> dict:
+        ''' A lower-level function which plugs directly into the Notion query api and provides the interface for the generic functions with Notion. '''
+        url = f"https://api.notion.com/v1/databases/{table_id}/query"
+        data = {"page_size": number}
+        if iterator is not None: data["start_cursor"] = iterator.handle
+        if record_filter is not None: data["filter"] = record_filter # deliberately not doing anything fancy as Notion's filter syntax is complex and better off just building queries that fit Notion
+        res = requests.post(url, json=data, auth=BearerAuth(api_key), headers={"Notion-Version": notion_version})
+        if res.status_code != 200:
+            raise SyncError(SYNC_ERROR_CODE.REQUEST_REJECTED, res.json())
+        return res.json()
+        
     def get_record_types(self):
         pass
 

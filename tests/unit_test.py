@@ -78,6 +78,35 @@ class NotionTest(unittest.TestCase):
             ds.add_records(it.records.records)
         return ds
 
+    def test_find_records(self):
+        reader = NotionReader(self.secret)
+
+        tbl : TableSpec = self.get_test_table(reader)
+        reader.set_table(tbl)
+
+        ds = reader.find_records("Hanzi", "一樣").records
+
+        tsv = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "./test_output/notion_find_test.tsv"}, "notion_find_test"))
+        tsv.create_table_sync(ds)
+
+        ids = reader.find_record_ids("Hanzi", "一樣")
+
+    def test_update_record(self):
+        nw = NotionWriter(self.secret)
+        nr = NotionReader(self.secret)
+        tbl : TableSpec = self.get_test_table(nr)
+        nr.set_table(tbl)
+        nw.set_table(tbl)
+
+        ds = nr.read_records_sync(10).records
+        
+        print (ds.records[0].asdict()) # lets me recover lost data more easily
+
+        ds.records[0]["Examples & Usage"] = "EXAMPLE UPDATE. Hopefully it's visible..."
+    
+        nw.update_record(ds.records[0], ds, "Hanzi", ds.records[0]["Hanzi"])
+
+
     def test_get_records_async(self):
         reader = NotionReader(self.secret)
 
