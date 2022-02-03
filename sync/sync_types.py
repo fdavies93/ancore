@@ -19,8 +19,10 @@ class SYNC_ERROR_CODE(IntEnum):
 
 class SYNC_STATUS_CODE(IntEnum):
     READING_SOURCE = 0,
-    WRITING_SOURCE = 1
+    WRITING_SOURCE = 1,
+    UPDATING_SOURCE = 2
 
+@dataclass
 class SyncStatus:
     total_records : int
     records_synced : int

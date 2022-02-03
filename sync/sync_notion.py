@@ -4,6 +4,7 @@ from ..dataset import COLUMN_TYPE, DataSet
 import requests
 import uuid
 import json
+from typing import Callable
 
 select_color_list = ["orange", "yellow", "green", "blue", "purple", "pink", "red"]
 notion_version = "2021-08-16"
@@ -258,17 +259,19 @@ class NotionWriter(SourceWriter):
         return res.json()
 
 
-    def update_table(self, left : DataSet, primary_key : str, loop_callback):
+    def update_table(self, left : DataSet, primary_key : str, loop_callback : Callable[[SyncStatus], None]):
         nr = NotionReader(self.api_key)
         nr.set_table(self.table)
 
         # print("Starting to read records from dataset.")
         handle = nr.read_records_sync(100, include_ids=True)
         right = handle.records
+        loop_callback(SyncStatus(-1, len(right.records), SYNC_STATUS_CODE.READING_SOURCE))
 
         while not handle.done:
             handle = nr.read_records_sync(100, next_iterator=handle, include_ids=True)
             right.add_records(handle.records)
+            loop_callback(SyncStatus(-1, len(right.records), SYNC_STATUS_CODE.READING_SOURCE))
 
         lki = build_key_index(left,primary_key)
 
@@ -301,11 +304,29 @@ class NotionWriter(SourceWriter):
         new_records.drop_column("notion_page_id")
 
         # print("Writing " + str(len(new_records.records)) + " new records.")
-        self.write_records_sync(new_records)
+        # each record is its own api call, so a limit of 1 is the same as running larger limits in Notion
+        total_new_records = len(new_records.records)
+        new_records_written = 0
+        total_update_records = len(update_records.records)
+
+        loop_callback(SyncStatus(total_new_records, new_records_written, SYNC_STATUS_CODE.WRITING_SOURCE))
+        write_handle = self.write_records_sync(new_records, 1)
+        new_records_written += 1
+
+        while not write_handle.done:
+            loop_callback(SyncStatus(total_new_records, new_records_written, SYNC_STATUS_CODE.WRITING_SOURCE))
+            write_handle = self.write_records_sync(new_records, 1, write_handle)
+            new_records_written += 1
+
+        loop_callback(SyncStatus(total_new_records, new_records_written, SYNC_STATUS_CODE.WRITING_SOURCE)) # to report completion
+
+        update_records_done = 0
 
         # print ("Starting update of " + str(len(update_records.records)) + " records.")
         for record in update_records.records:
             self.update_record_by_id(record, update_records, record["notion_page_id"], notion_columns)
+            update_records_done += 1
+            loop_callback(SyncStatus(total_update_records, update_records_done, SYNC_STATUS_CODE.UPDATING_SOURCE))
 
     def update_record_by_id(self, record : DataRecord, dataset : DataSet, id : str, notion_columns : dict[str,DataColumn] = None):
         if notion_columns == None:
