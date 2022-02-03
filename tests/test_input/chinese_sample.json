@@ -1,0 +1,3819 @@
+{
+    "header": {
+        "columns": {
+            "Tags": 2,
+            "Last Created": 3,
+            "English": 0,
+            "Zhuyin": 0,
+            "Subtags": 2,
+            "Examples & Usage": 0,
+            "Timestamp": 3,
+            "Pinyin": 0,
+            "Hanzi": 0
+        },
+        "format": {
+            "multiselect_delimiter": ",",
+            "time_formats": []
+        }
+    },
+    "records": [
+        {
+            "Tags": [
+                "grammar",
+                "routine"
+            ],
+            "Last Created": "1999-02-09T04:00:00+08:00",
+            "English": "equal to",
+            "Zhuyin": "\u3109\u3125\u02c7 \u3129\u02ca",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "EXAMPLE UPDATE. Hopefully it's visible...",
+            "Timestamp": "2021-05-30T21:30:00+08:00",
+            "Pinyin": "d\u011bngy\u00fa",
+            "Hanzi": "\u7b49\u65bc"
+        },
+        {
+            "Tags": [
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "baseball",
+            "Zhuyin": "\u3105\u3124\u02cb \u3111\u3127\u3121\u02ca",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00e0ngqi\u00fa",
+            "Hanzi": "\u68d2\u7403"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "park",
+            "Zhuyin": "\u310d\u3128\u3125 \u3129\u3122\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:52:00+00:00",
+            "Pinyin": "g\u014dngyu\u00e1n",
+            "Hanzi": "\u516c\u5712"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I show you",
+            "Zhuyin": "\u3128\u311b\u02c7 \u310d\u311f\u02c7 \u310b\u3127\u02c7 \u310e\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S1.+ \u7d66 + S2.+V./O.",
+            "Timestamp": "2021-05-25T10:45:00+00:00",
+            "Pinyin": "w\u01d2 g\u011bi n\u01d0 k\u00e0n",
+            "Hanzi": "\u6211 \u7d66 \u4f60 \u770b"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "myself",
+            "Zhuyin": " \u3117\u02cb \u3110\u3127\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "\u6211\u81ea\u5df1 myself\n\u4ed6\u81ea\u5df1 himself; herself\nreflexive pronouns",
+            "Timestamp": "2021-05-16T11:05:00+00:00",
+            "Pinyin": " z\u00ecj\u01d0",
+            "Hanzi": "\u6211 \u81ea\u5df1"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:26:00+00:00",
+            "English": "and; with",
+            "Zhuyin": "\u310f\u311c\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:26:00+00:00",
+            "Pinyin": "h\u00e9",
+            "Hanzi": "\u548c"
+        },
+        {
+            "Tags": [
+                "colors"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "red",
+            "Zhuyin": "\u310f\u3128\u3125\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "h\u00f3ngs\u00e8",
+            "Hanzi": "\u7d05\u8272"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-30T13:16:00+00:00",
+            "English": "library",
+            "Zhuyin": "\u310a\u3128\u02ca \u3115\u3128 \u310d\u3128\u3122\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:16:00+00:00",
+            "Pinyin": "t\u00fash\u016bgu\u01cen",
+            "Hanzi": "\u5716\u66f8\u9928"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:08:00+00:00",
+            "English": "or",
+            "Zhuyin": "\u310f\u311e\u02ca \u3115\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:08:00+00:00",
+            "Pinyin": "h\u00e1ishi",
+            "Hanzi": "\u9084\u662f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:09:00+00:00",
+            "English": "or",
+            "Zhuyin": "\u310f\u3128\u311b\u02cb \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:09:00+00:00",
+            "Pinyin": "hu\u00f2sh\u00ec",
+            "Hanzi": "\u6216\u662f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "scare",
+            "Zhuyin": "\u310f\u311e\u02cb \u3106\u311a\u02cb \u3106\u311a\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "h\u00e0ip\u00e0 p\u00e0",
+            "Hanzi": "\u5bb3\u6015/ \u6015"
+        },
+        {
+            "Tags": [
+                "routine"
+            ],
+            "Last Created": "2021-05-30T13:02:00+00:00",
+            "English": "blog",
+            "Zhuyin": "\u3105\u3128\u02cb \u310c\u3128\u311b\u02cb \u310d\u311c\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:02:00+00:00",
+            "Pinyin": "b\u00f9lu\u00f2g\u00e9",
+            "Hanzi": "\u90e8\u843d\u683c"
+        },
+        {
+            "Tags": [
+                "feelings",
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to cry",
+            "Zhuyin": "\u310e\u3128",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "k\u016b",
+            "Hanzi": "\u54ed"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "short (in length) - not people",
+            "Zhuyin": "\u3109\u3128\u3122\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "du\u01cen",
+            "Hanzi": "\u77ed"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:25:00+00:00",
+            "English": "go home; return home",
+            "Zhuyin": "\u310f\u3128\u311f\u02ca \u3110\u3127\u311a",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:25:00+00:00",
+            "Pinyin": "hu\u00edji\u0101",
+            "Hanzi": "\u56de\u5bb6"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:35:00+00:00",
+            "English": "only is ",
+            "Zhuyin": "\u3113\u02c7 \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "only+v.",
+            "Timestamp": "2021-05-30T13:35:00+00:00",
+            "Pinyin": "zh\u01d0 sh\u00ec",
+            "Hanzi": "\u53ea \u662f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "text; message; information",
+            "Zhuyin": "\u3112\u3129\u3123\u02cb \u3112\u3127",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:39:00+00:00",
+            "Pinyin": "x\u00f9nx\u012b",
+            "Hanzi": "\u8a0a\u606f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:40:00+00:00",
+            "English": "snake",
+            "Zhuyin": "\u3115\u311c\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:40:00+00:00",
+            "Pinyin": "sh\u00e9",
+            "Hanzi": "\u86c7"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "it depends on......",
+            "Zhuyin": "\u3127\u3120\u02cb \u310e\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00e0ok\u00e0n",
+            "Hanzi": "\u8981\u770b......"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "old (for people)",
+            "Zhuyin": "\u310c\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "\u6211\u7684\u8001\u5e2b\u5f88\u8001 my teach is old",
+            "Timestamp": "2021-05-16T11:30:00+00:00",
+            "Pinyin": "l\u01ceo",
+            "Hanzi": "\u8001"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "power outage",
+            "Zhuyin": "\u310a\u3127\u3125\u02ca \u3109\u3127\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:24:00+00:00",
+            "Pinyin": "t\u00edngdi\u00e0n",
+            "Hanzi": "\u505c\u96fb"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "down",
+            "Zhuyin": "\u3112\u3127\u311a\u02cb \u3107\u3127\u3122\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u00e0mian",
+            "Hanzi": "\u4e0b\u9762"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-30T13:17:00+00:00",
+            "English": "downstairs",
+            "Zhuyin": "\u310c\u3121\u02ca \u3112\u3127\u311a\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:17:00+00:00",
+            "Pinyin": "l\u00f3uxi\u00e0",
+            "Hanzi": "\u6a13\u4e0b"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "egg",
+            "Zhuyin": "\u3109\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "d\u00e0n",
+            "Hanzi": "\u86cb"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "green",
+            "Zhuyin": "\u310c\u3129\u02cb \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "l\u01dcs\u00e8",
+            "Hanzi": "\u7da0\u8272"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "open (adj)",
+            "Zhuyin": "\u310d\u3128\u3125 \u310e\u311e",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-23T20:30:00+00:00",
+            "Pinyin": "g\u014dngk\u0101i",
+            "Hanzi": "\u516c\u958b"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "chicken (meat)",
+            "Zhuyin": "\u3110\u3127 \u3116\u3121\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "j\u012br\u00f2u",
+            "Hanzi": "\u96de\u8089"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "sweet and sour soup",
+            "Zhuyin": "\u3119\u3128\u3122 \u310c\u311a\u02cb \u310a\u3124",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "su\u0101nl\u00e0t\u0101ng",
+            "Hanzi": "\u9178\u8fa3\u6e6f"
+        },
+        {
+            "Tags": [
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to run",
+            "Zhuyin": "\u3106\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:28:00+00:00",
+            "Pinyin": "p\u01ceo",
+            "Hanzi": "\u8dd1"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "unhealthy",
+            "Zhuyin": "\u3105\u3128\u02cb \u3110\u3127\u3122\u02cb \u310e\u3124",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00f9 ji\u00e0nk\u0101ng",
+            "Hanzi": "\u4e0d \u5065\u5eb7"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "oatmeal; cereal",
+            "Zhuyin": " \u3107\u311e\u02cb \u3106\u3127\u3122\u02cb",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-27T18:57:00+00:00",
+            "Pinyin": "m\u00e0ipi\u00e0n",
+            "Hanzi": "\u9ea5\u7247"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "ears",
+            "Zhuyin": "\u3126\u02c7 \u3109\u3128\u311b\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "\u011brduo",
+            "Hanzi": "\u8033\u6735"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "with",
+            "Zhuyin": "\u3106\u311f\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "p\u00e8i",
+            "Hanzi": "\u914d"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "beef",
+            "Zhuyin": "\u310b\u3127\u3121\u02ca \u3116\u3121\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ni\u00far\u00f2u",
+            "Hanzi": "\u725b\u8089"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "monday",
+            "Zhuyin": "\u3112\u3127\u3125 \u3111\u3127 ",
+            "Subtags": [
+                "time-weekday"
+            ],
+            "Examples & Usage": "\u661f\u671f #\nday of the week #",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "x\u012bngq\u012b ",
+            "Hanzi": "\u661f\u671f \u4e00"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "belly",
+            "Zhuyin": "\u3109\u3128\u02cb \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "d\u00f9zi",
+            "Hanzi": "\u809a\u5b50"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:36:00+00:00",
+            "English": "is for visiting",
+            "Zhuyin": "\u3113\u02c7 \u3115\u02cb \u3118\u3122 \u310d\u3128\u3122 \u3129\u3125\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:36:00+00:00",
+            "Pinyin": "zh\u01d0 sh\u00ec c\u0101ngu\u0101n y\u00f2ng",
+            "Hanzi": "\u53ea \u662f \u53c3\u89c0 \u7528"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "up",
+            "Zhuyin": "\u3115\u3124\u02cb \u3107\u3127\u3122\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u00e0ngmian",
+            "Hanzi": "\u4e0a\u9762"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Tuesday",
+            "Zhuyin": "\u3126\u02cb \u3116\u02cb",
+            "Subtags": [
+                "time-date"
+            ],
+            "Examples & Usage": "# \u65e5\nday # (literary)",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "\u00e8r r\u00ec",
+            "Hanzi": "\u4e8c \u65e5"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "the top",
+            "Zhuyin": "\u3115\u3124\u02cb \u3127",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u00e0ngy\u012b",
+            "Hanzi": "\u4e0a\u8863"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "table",
+            "Zhuyin": "\u3113\u3128\u311b \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-21T15:32:00+00:00",
+            "Pinyin": "zhu\u014dzi",
+            "Hanzi": "\u684c\u5b50"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:00:00+00:00",
+            "English": "Are you full?",
+            "Zhuyin": "\u3127\u3121\u02c7 \u3114 \u3105\u3120\u02c7 \u3107\u311a\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "\u6709 v. \u98fd \u55ce?",
+            "Timestamp": "2021-05-30T13:00:00+00:00",
+            "Pinyin": "y\u01d2u ch\u012bb\u01ceo ma",
+            "Hanzi": "\u6709 \u5403\u98fd \u55ce?"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:27:00+00:00",
+            "English": "high salary makes me happy",
+            "Zhuyin": "\u310d\u3120 \u3112\u3127\u3123 \u3116\u3124\u02cb \u3128\u311b\u02c7 \u310e\u3128\u311e\u02cb \u310c\u311c\u02cb ",
+            "Subtags": [],
+            "Examples & Usage": "N1./ S1./ O1.+ \u8b93+ N2./ S2./ O2. +feelings",
+            "Timestamp": "2021-05-30T13:27:00+00:00",
+            "Pinyin": "g\u0101ox\u012bn r\u00e0ng w\u01d2 ku\u00e0il\u00e8 ",
+            "Hanzi": "\u9ad8\u85aa \u8b93 \u6211 \u5feb\u6a02\n"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "so-so",
+            "Zhuyin": "\u310f\u311e\u02ca \u310f\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:37:00+00:00",
+            "Pinyin": "h\u00e1ih\u01ceo",
+            "Hanzi": "\u9084\u597d"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "last year",
+            "Zhuyin": "\u3111\u3129\u02cb \u310b\u3127\u3122\u02ca",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-23T20:44:00+00:00",
+            "Pinyin": "q\u00f9nian",
+            "Hanzi": "\u53bb\u5e74"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "color",
+            "Zhuyin": "\u3127\u3122\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00e1ns\u00e8",
+            "Hanzi": "\u984f\u8272"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:26:00+00:00",
+            "English": "must",
+            "Zhuyin": "\u3105\u3127\u02cb \u3112\u3129",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:26:00+00:00",
+            "Pinyin": "b\u00ecx\u016b",
+            "Hanzi": "\u5fc5\u9808"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "should",
+            "Zhuyin": "\u3127\u3125 \u310d\u311e",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u012bngg\u0101i",
+            "Hanzi": "\u61c9\u8a72"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "after I play squash, I cool",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3109\u311a\u02c7 \u3105\u3127\u02cb \u3111\u3127\u3121\u02ca \u3113 \u310f\u3121\u02cb (\u3128\u311b\u02c7) \u3113\u3128\u02c7 \u3108\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. V1. \u4e4b\u5f8c (S.) V2.",
+            "Timestamp": "2021-05-16T11:16:00+00:00",
+            "Pinyin": "w\u01d2 d\u01ceb\u00ecqi\u00fa zh\u012bh\u00f2u (w\u01d2) zh\u01d4f\u00e0n",
+            "Hanzi": "\u6211 \u6253\u58c1\u7403 \u4e4b\u5f8c (\u6211) \u716e\u98ef"
+        },
+        {
+            "Tags": [
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "the dance (n.)",
+            "Zhuyin": "\u3128\u02c7 \u3128\u02c7 \u3109\u3120\u02c7",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u01d4 w\u01d4d\u01ceo",
+            "Hanzi": "\u821e / \u821e\u8e48"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "breakfast",
+            "Zhuyin": "\u3117\u3120\u02c7 \u3118\u3122",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-27T18:55:00+00:00",
+            "Pinyin": "z\u01ceoc\u0101n",
+            "Hanzi": "\u65e9\u9910"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "scary",
+            "Zhuyin": "\u310e\u3128\u3125\u02c7 \u3105\u3128\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T10:08:00+00:00",
+            "Pinyin": "k\u01d2ngb\u00f9",
+            "Hanzi": "\u6050\u6016"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "next year",
+            "Zhuyin": "\u3107\u3127\u3125\u02ca \u310b\u3127\u3122\u02ca",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-23T20:48:00+00:00",
+            "Pinyin": "m\u00edngni\u00e1n",
+            "Hanzi": "\u660e\u5e74"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "top floor",
+            "Zhuyin": "\u3109\u3127\u3125\u02c7 \u310c\u3121\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:52:00+00:00",
+            "Pinyin": "d\u01d0ngl\u00f3u",
+            "Hanzi": "\u9802\u6a13"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "mood",
+            "Zhuyin": "\u3112\u3127\u3123 \u3111\u3127\u3125\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "x\u012bnq\u00edng",
+            "Hanzi": "\u5fc3\u60c5"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "this week (use often)",
+            "Zhuyin": "\u3113\u311c\u02cb \u310c\u3127\u02c7 \u3105\u311e\u02cb",
+            "Subtags": [
+                "time-weekday"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zh\u00e8l\u01d0b\u00e0i",
+            "Hanzi": "\u9019\u79ae\u62dc"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to believe / to trust",
+            "Zhuyin": "\u3112\u3127\u3124 \u3112\u3127\u3123\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u0101ngx\u00ecn",
+            "Hanzi": "\u76f8\u4fe1"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "store; shop",
+            "Zhuyin": "\u3115\u3124 \u3109\u3127\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "name + \u5546\u5e97\nex. \u66f8\u5e97 bookstore",
+            "Timestamp": "2021-05-16T11:25:00+00:00",
+            "Pinyin": "sh\u0101ngdi\u00e0n",
+            "Hanzi": "\u5546\u5e97"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "black",
+            "Zhuyin": "\u310f\u311f \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:22:00+00:00",
+            "Pinyin": "h\u0113is\u00e8",
+            "Hanzi": "\u9ed1\u8272"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:18:00+00:00",
+            "English": "to end the class; break time during the class",
+            "Zhuyin": "\u3112\u3127\u311a\u02cb \u310e\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:18:00+00:00",
+            "Pinyin": "xi\u00e0k\u00e8",
+            "Hanzi": "\u4e0b\u8ab2"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "meme",
+            "Zhuyin": "\u310d\u3125\u02c7 \u310a\u3128\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:39:00+00:00",
+            "Pinyin": "g\u011bngt\u00fa",
+            "Hanzi": "\u6897\u5716"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "supermarket",
+            "Zhuyin": "\u3114\u3120 \u3110\u3127\u02ca \u3115\u02cb \u3114\u3124\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ch\u0101oj\u00ed sh\u00ecch\u01ceng",
+            "Hanzi": "\u8d85\u7d1a \u5e02\u5834"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "today",
+            "Zhuyin": "\u3110\u3127\u3123 \u310a\u3127\u3122",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "j\u012bnti\u0101n",
+            "Hanzi": "\u4eca\u5929"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "go over (place)",
+            "Zhuyin": "\u3129\u311d\u02cb \u310d\u3128\u311b\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "past tense; \u8d8a\u904e\u4e86",
+            "Timestamp": "2021-05-25T11:34:00+00:00",
+            "Pinyin": "yu\u00e8gu\u00f2",
+            "Hanzi": "\u8d8a\u904e"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "this is",
+            "Zhuyin": "\u3113\u311c\u02cb \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "this is + n.\n\u9019\u662f\u7d05\u8272\u7684\u4e0a\u8863\n(this is a red top)",
+            "Timestamp": "2021-05-16T10:04:00+00:00",
+            "Pinyin": "zh\u00e8sh\u00ec",
+            "Hanzi": "\u9019\u662f"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "ham",
+            "Zhuyin": "\u310f\u3128\u311b\u02c7 \u310a\u3128\u311f\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "hu\u01d2tu\u01d0",
+            "Hanzi": "\u706b\u817f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:04:00+00:00",
+            "English": "but (use often)",
+            "Zhuyin": "\u3109\u3122\u02cb \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:04:00+00:00",
+            "Pinyin": "d\u00e0nsh\u00ec",
+            "Hanzi": "\u4f46\u662f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "they (female or male)",
+            "Zhuyin": "\u310a\u311a \u3107\u3123\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:10:00+00:00",
+            "Pinyin": "t\u0101men",
+            "Hanzi": "\u4ed6\u5011"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "brown",
+            "Zhuyin": "\u3117\u3128\u3125 \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "z\u014dngs\u00e8",
+            "Hanzi": "\u68d5\u8272"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "My previous school",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3113 \u3111\u3127\u3122\u02ca \u3109\u311c\u02d9 \u3112\u3129\u311d\u02ca \u3112\u3127\u3120\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u4e4b\u524d\u7684n./O.\nS's former / previous N/O",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u01d2 zh\u012bqi\u00e1nde xu\u00e9xi\u00e0o",
+            "Hanzi": "\u6211 \u4e4b\u524d\u7684 \u5b78\u6821"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:05:00+00:00",
+            "English": "",
+            "Zhuyin": "\u3128\u311b\u02c7 \u310f\u3123\u02c7 \u310b\u3122\u02ca \u310d\u3128\u311b\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u5f88+ feelings",
+            "Timestamp": "2021-05-30T13:05:00+00:00",
+            "Pinyin": "w\u01d2 h\u011bn n\u00e1ngu\u00f2",
+            "Hanzi": "\u6211 \u5f88 \u96e3\u904e"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "not big also not small",
+            "Zhuyin": "\u3105\u3128\u02cb \u3109\u311a\u02cb \u3127\u311d\u02c7 \u3105\u3128\u02cb \u3112\u3127\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:48:00+00:00",
+            "Pinyin": "b\u00f9 d\u00e0 y\u011b b\u00f9 xi\u01ceo",
+            "Hanzi": "\u4e0d \u5927 \u4e5f \u4e0d \u5c0f"
+        },
+        {
+            "Tags": [
+                "hobbies",
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "travel",
+            "Zhuyin": "\u310c\u3129\u02c7 \u3112\u3127\u3125\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-23T20:35:00+00:00",
+            "Pinyin": "l\u01dax\u00edng",
+            "Hanzi": "\u65c5\u884c"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:25:00+00:00",
+            "English": "to send message",
+            "Zhuyin": "\u3114\u3128\u3122\u02ca \u3112\u3129\u3123\u02cb \u3112\u3127",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:25:00+00:00",
+            "Pinyin": "chu\u00e1n x\u00f9nx\u012b",
+            "Hanzi": "\u50b3 \u8a0a\u606f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "10:30 (telling time)",
+            "Zhuyin": "\u3115\u02ca \u3109\u3127\u3122\u02c7 \u3119\u3122 \u3115\u02ca \u3108\u3123",
+            "Subtags": [
+                "time-time"
+            ],
+            "Examples & Usage": "# \u9ede # \u5206\n# hours # seconds (telling time)",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u00ed di\u01cen s\u0101nsh\u00ed f\u0113n",
+            "Hanzi": "\u5341 \u9ede \u4e09\u5341 \u5206"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "tutor (n / v)",
+            "Zhuyin": "\u3110\u3127\u311a \u3110\u3127\u3120\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ji\u0101ji\u00e0o",
+            "Hanzi": "\u5bb6\u6559"
+        },
+        {
+            "Tags": [
+                "routine"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to take a bus",
+            "Zhuyin": "\u3109\u311a \u310d\u3128\u3125 \u3114\u311c",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:21:00+00:00",
+            "Pinyin": "d\u0101 g\u014dngch\u0113",
+            "Hanzi": "\u642d \u516c\u8eca"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Bank card",
+            "Zhuyin": "\u3127\u3123\u02ca \u310f\u3124\u02ca \u310e\u311a\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-28T12:33:00+00:00",
+            "Pinyin": "Y\u00ednh\u00e1ng k\u01ce",
+            "Hanzi": "\u9280\u884c\u5361"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "year 5",
+            "Zhuyin": "\u3128\u02c7 \u310b\u3127\u3122\u02ca",
+            "Subtags": [
+                "time-date"
+            ],
+            "Examples & Usage": "# \u5e74\n# year",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u01d4 ni\u00e1n",
+            "Hanzi": "\u4e94 \u5e74"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Coffee is really bad",
+            "Zhuyin": "\u310e\u311a \u3108\u311f \u3113\u3123 \u3109\u311c\u02d9 \u310f\u3123\u02c7 \u310b\u3122\u02ca \u310f\u311c",
+            "Subtags": [],
+            "Examples & Usage": "O./ S. \u771f\u7684\u5f88+adj.",
+            "Timestamp": "2021-05-25T11:37:00+00:00",
+            "Pinyin": "k\u0101f\u0113i zh\u0113nde h\u011bn n\u00e1n h\u0113",
+            "Hanzi": "\u5496\u5561 \u771f\u7684 \u5f88 \u96e3 \u559d"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "night market",
+            "Zhuyin": "\u3127\u311d\u02cb \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00e8sh\u00ec",
+            "Hanzi": "\u591c\u5e02"
+        },
+        {
+            "Tags": [
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "squash (sport)",
+            "Zhuyin": "\u3105\u3127\u02cb \u3111\u3127\u3121\u02ca",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00ecqi\u00fa",
+            "Hanzi": "\u58c1\u7403"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "today is hotter than yesterday",
+            "Zhuyin": "\u3110\u3127\u3123 \u310a\u3127\u3122 \u3105\u3127\u02c7 \u3117\u3128\u311b\u02ca \u310a\u3127\u3122 \u3116\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S1./ O1. \u6bd4 S2./ O2. a. ",
+            "Timestamp": "2021-05-16T11:34:00+00:00",
+            "Pinyin": "j\u012bnti\u0101n b\u01d0 zu\u00f3ti\u0101n r\u00e8",
+            "Hanzi": "\u4eca\u5929 \u6bd4 \u6628\u5929 \u71b1"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:35:00+00:00",
+            "English": "happy",
+            "Zhuyin": "\u310d\u3120 \u3112\u3127\u3125\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:35:00+00:00",
+            "Pinyin": "g\u0101ox\u00ecng",
+            "Hanzi": "\u9ad8\u8208"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "eye",
+            "Zhuyin": "\u3127\u3122\u02c7 \u3110\u3127\u3125\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u01cenjing",
+            "Hanzi": "\u773c\u775b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:07:00+00:00",
+            "English": "salary",
+            "Zhuyin": "\u3112\u3127\u3123 \u3115\u3128\u311f\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:07:00+00:00",
+            "Pinyin": "x\u012bnshu\u01d0",
+            "Hanzi": "\u85aa\u6c34"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "that is red",
+            "Zhuyin": "\u310b\u311a\u02cb \u3115\u02d9 \u310f\u3128\u3125\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "that is + color",
+            "Timestamp": "2021-05-16T10:07:00+00:00",
+            "Pinyin": "n\u00e0shi h\u00f3ngs\u00e8",
+            "Hanzi": "\u90a3\u662f \u7d05\u8272"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:40:00+00:00",
+            "English": "viper",
+            "Zhuyin": "\u3109\u3128\u02ca \u3115\u311c\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:40:00+00:00",
+            "Pinyin": "d\u00fash\u00e9",
+            "Hanzi": "\u6bd2\u86c7"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "tuesday",
+            "Zhuyin": "\u310c\u3127\u02c7 \u3105\u311e\u02cb ",
+            "Subtags": [
+                "time-weekday"
+            ],
+            "Examples & Usage": "\u79ae\u62dc #\nday of the week #",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "l\u01d0b\u00e0i ",
+            "Hanzi": "\u79ae\u62dc \u4e8c"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "really? ",
+            "Zhuyin": "\u3113\u3123 \u3109\u311c\u02d9 \u3107\u311a\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T11:37:00+00:00",
+            "Pinyin": "zh\u0113ndema",
+            "Hanzi": "\u771f\u7684\u55ce?"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "beautiful",
+            "Zhuyin": "\u3107\u311f\u02c7 \u310c\u3127\u02cb \u3107\u311f\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "place, scenery, clothes, hairstyle, and person",
+            "Timestamp": "2021-05-25T10:51:00+00:00",
+            "Pinyin": "m\u011bil\u00ec m\u011bi",
+            "Hanzi": "\u7f8e\u9e97 / \u7f8e"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to buy",
+            "Zhuyin": "\u3107\u311e\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:36:00+00:00",
+            "Pinyin": "m\u01cei",
+            "Hanzi": "\u8cb7"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "3 days",
+            "Zhuyin": " \u310f\u3120\u02cb",
+            "Subtags": [
+                "time-date"
+            ],
+            "Examples & Usage": "# \u865f\nday #",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": " h\u00e0o",
+            "Hanzi": "\u4e09 \u865f"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "neck",
+            "Zhuyin": "\u3105\u311b\u02ca \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00f3zi",
+            "Hanzi": "\u8116\u5b50"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "easy to",
+            "Zhuyin": "\u310f\u3123\u02c7 \u3116\u3128\u3125\u02ca \u3127\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "\u5f88 \u5bb9\u6613 (adj)\nEasy to (adj)",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "h\u011bn r\u00f3ngy\u00ec",
+            "Hanzi": "\u5f88 \u5bb9\u6613"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I go through the sea/ ocean to Taiwan",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3129\u311d\u02cb \u310d\u3128\u311b\u02cb \u310f\u311e\u02c7 \u310f\u311e\u02c7 \u3127\u3124\u02ca \u310c\u311e\u02ca \u310a\u311e\u02ca \u3128\u3122",
+            "Subtags": [],
+            "Examples & Usage": "S. \u8d8a\u904e+place+l\u4f86+destination",
+            "Timestamp": "2021-05-25T11:35:00+00:00",
+            "Pinyin": "w\u01d2 yu\u00e8gu\u00f2 h\u01ceih\u01ceiy\u00e1ng l\u00e1i T\u00e1iw\u0101n",
+            "Hanzi": "\u6211 \u8d8a\u904e \u6d77/\u6d77\u6d0b \u4f86 \u53f0\u7063"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "mother tongue",
+            "Zhuyin": "\u3107\u3128\u02c7 \u3129\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "m\u01d4y\u01d4",
+            "Hanzi": "\u6bcd\u8a9e"
+        },
+        {
+            "Tags": [
+                "sport",
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "racquet",
+            "Zhuyin": "\u3111\u3127\u3121\u02ca \u3106\u311e",
+            "Subtags": [
+                "hobbies-equipment"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "qi\u00fap\u0101i",
+            "Hanzi": "\u7403\u62cd"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to smile or to laugh",
+            "Zhuyin": "\u3112\u3127\u3120\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u00e0o",
+            "Hanzi": "\u7b11"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "When......",
+            "Zhuyin": "\u3109\u3124 \u3109\u311c\u02d9 \u3115\u02ca \u310f\u3121\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "d\u0101ng ... de sh\u00ed hou",
+            "Hanzi": "\u7576......\u7684 \u6642 \u5019......"
+        },
+        {
+            "Tags": [
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "(measure word) session; round of sports, competition, game, speech or seminar",
+            "Zhuyin": "\u3114\u3124\u02c7 \u3110\u3129\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ch\u01ceng j\u00fa",
+            "Hanzi": "\u5834/ \u5c40"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "driving car is more convenient",
+            "Zhuyin": "\u310e\u311e \u3114\u311c \u3105\u3127\u02c7 \u3110\u3127\u3120\u02cb \u3108\u3124 \u3105\u3127\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S./ O. \u6bd4\u8f03 a.",
+            "Timestamp": "2021-05-16T11:31:00+00:00",
+            "Pinyin": "k\u0101ich\u0113 b\u01d0ji\u00e0o f\u0101ngbi\u00e0n",
+            "Hanzi": "\u958b\u8eca \u6bd4\u8f03 \u65b9\u4fbf"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "the prettiest girl",
+            "Zhuyin": "\u3117\u3128\u311f\u02cb \u3106\u3127\u3120\u02cb \u310c\u3127\u3124\u02d9 \u3109\u311c\u02d9 \u310b\u3129\u02c7 \u3115\u3125",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zu\u00ec pi\u00e0oliang de n\u01dash\u0113ng",
+            "Hanzi": "\u6700 \u6f02\u4eae \u7684 \u5973\u751f"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "You really have to order a large bowl.",
+            "Zhuyin": " \u3127 \u3109\u3127\u3125\u02cb \u3127\u3120\u02cb ",
+            "Subtags": [],
+            "Examples & Usage": "S. \u4e00\u5b9a\u8981V. O.\nS. definitely/ must V. O.",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": " y\u012bd\u00ecngy\u00e0o ",
+            "Hanzi": "\u4f60 \u4e00\u5b9a \u8981 \u9ede \u5927 \u7897 \u7684\u3002"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "head",
+            "Zhuyin": "\u310a\u3121\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "t\u00f3u",
+            "Hanzi": "\u982d"
+        },
+        {
+            "Tags": [
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "marathon",
+            "Zhuyin": "\u3107\u311a\u02c7 \u310c\u311a \u3119\u3128\u3125",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:28:00+00:00",
+            "Pinyin": "m\u01cel\u0101s\u014dng",
+            "Hanzi": "\u99ac\u62c9\u677e"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to live",
+            "Zhuyin": "\u3113\u3128\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zh\u00f9",
+            "Hanzi": "\u4f4f"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "When I was a children......",
+            "Zhuyin": "\u3109\u3124 \u3128\u311b\u02c7 \u3115\u02cb \u310f\u311e\u02ca \u3117\u02d9 \u3109\u311c\u02d9 \u3115\u02ca \u310f\u3121\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "d\u0101ng w\u01d2 sh\u00ec h\u00e1izi de sh\u00ed hou",
+            "Hanzi": "\u7576 \u6211 \u662f \u5b69\u5b50 \u7684 \u6642 \u5019......"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "how old are you",
+            "Zhuyin": "\u310b\u3127\u02c7 \u3110\u3127\u02c7 \u3119\u3128\u311f\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u5e7e \u6b72",
+            "Timestamp": "2021-05-16T11:38:00+00:00",
+            "Pinyin": "n\u01d0 j\u01d0 su\u00ec",
+            "Hanzi": "\u4f60 \u5e7e \u6b72"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "nose",
+            "Zhuyin": "\u3105\u3127\u02ca \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00edzi",
+            "Hanzi": "\u9f3b\u5b50"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "hat; cap",
+            "Zhuyin": "\u3107\u3120\u02cb \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "m\u00e0ozi",
+            "Hanzi": "\u5e3d\u5b50"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to wear (clothes, shoes and socks)",
+            "Zhuyin": "\u3114\u3128\u3122",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "chu\u0101n",
+            "Hanzi": "\u7a7f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:01:00+00:00",
+            "English": "full",
+            "Zhuyin": "\u3105\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:01:00+00:00",
+            "Pinyin": "b\u01ceo",
+            "Hanzi": "\u98fd"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:39:00+00:00",
+            "English": "I don't plan to go to",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3105\u3128\u02cb \u3109\u311a\u02c7 \u3119\u3128\u3122\u02cb \u3111\u3129\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u4e0d+\u6253\u7b97+V.+O.",
+            "Timestamp": "2021-05-30T13:39:00+00:00",
+            "Pinyin": "w\u01d2 b\u00f9 d\u01cesu\u00e0n q\u00f9",
+            "Hanzi": "\u6211 \u4e0d \u6253\u7b97 \u53bb"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-30T13:41:00+00:00",
+            "English": "campus for cram school",
+            "Zhuyin": "\u3108\u3123 \u3112\u3127\u3120\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:41:00+00:00",
+            "Pinyin": "f\u0113nxi\u00e0o",
+            "Hanzi": "\u5206\u6821"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "fiance",
+            "Zhuyin": "\u3128\u311f\u02cb \u310f\u3128\u3123 \u3111\u3127",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u00e8ih\u016bnq\u012b",
+            "Hanzi": "\u672a\u5a5a\u59bb"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "health / healthy (adj / n )",
+            "Zhuyin": "\u3110\u3127\u3122\u02cb \u310e\u3124",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ji\u00e0nk\u0101ng",
+            "Hanzi": "\u5065\u5eb7"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-30T13:18:00+00:00",
+            "English": "manager",
+            "Zhuyin": "\u3110\u3127\u3125 \u310c\u3127\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:18:00+00:00",
+            "Pinyin": "j\u012bngl\u01d0",
+            "Hanzi": "\u7d93\u7406"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "again",
+            "Zhuyin": "\u3117\u311e\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:47:00+00:00",
+            "Pinyin": "z\u00e0i",
+            "Hanzi": "\u518d"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:26:00+00:00",
+            "English": "km",
+            "Zhuyin": "\u310d\u3128\u3125 \u310c\u3127\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:26:00+00:00",
+            "Pinyin": "g\u014dngl\u01d0",
+            "Hanzi": "\u516c\u91cc"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "good to see (e.g. a movie)",
+            "Zhuyin": "\u310f\u3123\u02c7 \u310f\u3120\u02c7 \u310e\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "\u5f88\u597d V\nhenhaokan, henhaochi, henhaoyong, etc",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "h\u011bnh\u01ceok\u00e0n",
+            "Hanzi": "\u5f88\u597d\u770b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "convenient",
+            "Zhuyin": "\u3108\u3124 \u3105\u3127\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "f\u0101ngbi\u00e0n",
+            "Hanzi": "\u65b9\u4fbf"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "food",
+            "Zhuyin": "\u3115\u02ca \u3128\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:44:00+00:00",
+            "Pinyin": "sh\u00edw\u00f9",
+            "Hanzi": "\u98df\u7269"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "co-worker; colleague",
+            "Zhuyin": "\u310a\u3128\u3125\u02ca \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:40:00+00:00",
+            "Pinyin": "t\u00f3ngsh\u00ec",
+            "Hanzi": "\u540c\u4e8b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "this week",
+            "Zhuyin": "\u3113\u311c\u02cb \u3113\u3121",
+            "Subtags": [
+                "time-weekday"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zh\u00e8zh\u014du",
+            "Hanzi": "\u9019\u9031"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "type or kind of ",
+            "Zhuyin": "\u3127\u3124\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00e0ng",
+            "Hanzi": "\u6a23"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:10:00+00:00",
+            "English": "to tell; to talk to",
+            "Zhuyin": "\u310d\u3120\u02cb \u3119\u3128\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "S1. \u544a\u8a34 S2.+event; matter",
+            "Timestamp": "2021-05-30T13:10:00+00:00",
+            "Pinyin": "g\u00e0osu",
+            "Hanzi": "\u544a\u8a34"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "teeth",
+            "Zhuyin": "\u3127\u311a\u02ca \u3114\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00e1ch\u01d0",
+            "Hanzi": "\u7259\u9f52"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "dirty",
+            "Zhuyin": "\u3117\u3124\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "z\u01ceng",
+            "Hanzi": "\u9ad2"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "burger",
+            "Zhuyin": "\u310f\u3122\u02cb \u3105\u3120\u02c7",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "h\u00e0nb\u01ceo",
+            "Hanzi": "\u6f22\u5821"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-30T13:41:00+00:00",
+            "English": "boss",
+            "Zhuyin": "\u310c\u3120\u02c7 \u3105\u3122\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:41:00+00:00",
+            "Pinyin": "l\u01ceob\u01cen",
+            "Hanzi": "\u8001\u95c6"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "disgusting; yucky",
+            "Zhuyin": "\u311c\u02c7 \u3112\u3127\u3123",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "\u011bx\u012bn",
+            "Hanzi": "\u5641\u5fc3"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "sticker(s)",
+            "Zhuyin": "\u310a\u3127\u311d \u3113\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ti\u0113zh\u01d0",
+            "Hanzi": "\u8cbc\u7d19"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:35:00+00:00",
+            "English": "to visit (museum)",
+            "Zhuyin": "\u3118\u3122 \u310d\u3128\u3122",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:35:00+00:00",
+            "Pinyin": "c\u0101ngu\u0101n",
+            "Hanzi": "\u53c3\u89c0"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "this week (use often)",
+            "Zhuyin": "\u3113\u311c\u02cb \u3112\u3127\u3125 \u3111\u3127",
+            "Subtags": [
+                "time-weekday"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zh\u00e8 x\u012bngq\u012b",
+            "Hanzi": "\u9019 \u661f\u671f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "March",
+            "Zhuyin": "\u3119\u3122 \u3129\u311d\u02cb",
+            "Subtags": [
+                "time-date"
+            ],
+            "Examples & Usage": "# \u6708\nMonth #",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "s\u0101n yu\u00e8",
+            "Hanzi": "\u4e09 \u6708"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "hairstyle",
+            "Zhuyin": "\u3108\u311a\u02cb \u3112\u3127\u3125\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:52:00+00:00",
+            "Pinyin": "f\u00e0x\u00edng",
+            "Hanzi": "\u9aee\u578b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "you (plural)",
+            "Zhuyin": "\u310b\u3127\u02c7 \u3107\u3123\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:09:00+00:00",
+            "Pinyin": "n\u01d0men",
+            "Hanzi": "\u4f60\u5011"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I stay at home by myself",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3117\u02cb \u3110\u3127\u02c7 \u3117\u311e\u02cb \u3110\u3127\u311a",
+            "Subtags": [],
+            "Examples & Usage": "S. \u81ea\u5df1 \u5728 place",
+            "Timestamp": "2021-05-16T11:14:00+00:00",
+            "Pinyin": "w\u01d2z\u00ecj\u01d0 z\u00e0i ji\u0101",
+            "Hanzi": "\u6211\u81ea\u5df1 \u5728 \u5bb6"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "all day",
+            "Zhuyin": "(\u3127)\u3113\u3125\u02c7 \u310a\u3127\u3122",
+            "Subtags": [
+                "time-weekday"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:48:00+00:00",
+            "Pinyin": "(y\u012b)zh\u011bngti\u0101n",
+            "Hanzi": "(\u4e00)\u6574\u5929"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I will go to school",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3109\u3120\u02cb \u3112\u3129\u311d\u02ca \u3112\u3127\u3120\u02cb \u3111\u3129\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u5230 place \u53bb",
+            "Timestamp": "2021-05-16T11:20:00+00:00",
+            "Pinyin": "w\u01d2 d\u00e0o xu\u00e9xi\u00e0o q\u00f9",
+            "Hanzi": "\u6211 \u5230 \u5b78\u6821 \u53bb"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "national holiday",
+            "Zhuyin": "\u310d\u3128\u311b\u02ca \u3109\u3127\u3125\u02cb \u3110\u3127\u311a\u02cb \u3116\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "gu\u00f3d\u00ecng ji\u00e0r\u00ec",
+            "Hanzi": "\u570b\u5b9a \u5047\u65e5"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I, me",
+            "Zhuyin": "\u3128\u311b\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:08:00+00:00",
+            "Pinyin": "w\u01d2",
+            "Hanzi": "\u6211"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "kid; children",
+            "Zhuyin": "\u310f\u311e\u02ca \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "h\u00e1izi",
+            "Hanzi": "\u5b69\u5b50"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "uncomfortable",
+            "Zhuyin": "\u3105\u3128\u02cb \u3115\u3128 \u3108\u3128\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00f9sh\u016bfu",
+            "Hanzi": "\u4e0d\u8212\u670d"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "girl",
+            "Zhuyin": "\u310b\u3129\u02c7 \u3115\u3125",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "n\u01dash\u0113ng",
+            "Hanzi": "\u5973\u751f"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "place1/building1 is near by the place2/building2",
+            "Zhuyin": " \u3117\u311e\u02cb \u3108\u3128\u02cb \u3110\u3127\u3123\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "place1/building1 \u5728 place2/building2 \u9644\u8fd1",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": " z\u00e0i f\u00f9j\u00ecn",
+            "Hanzi": " \u5728 \u9644\u8fd1"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to cough",
+            "Zhuyin": "\u310e\u311c\u02ca \u3119\u3121\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:34:00+00:00",
+            "Pinyin": "k\u00e9sou",
+            "Hanzi": "\u54b3\u55fd"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "old (for things; place)",
+            "Zhuyin": "\u3110\u3127\u3121\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "\u6211\u7684\u4e0a\u8863\u5f88\u820a\nmy top is old",
+            "Timestamp": "2021-05-16T11:29:00+00:00",
+            "Pinyin": "ji\u00f9",
+            "Hanzi": "\u820a"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "1 hour",
+            "Zhuyin": "\u3127 \uff08\u310d\u311c\u02cb\uff09 \u3112\u3127\u3120\u02c7 \u3115\u02ca",
+            "Subtags": [
+                "time-time"
+            ],
+            "Examples & Usage": "# \uff08\u500b\uff09 \u5c0f\u6642\n# hours",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u012b \uff08g\u00e8\uff09 xi\u01ceosh\u00ed",
+            "Hanzi": "\u4e00 \uff08\u500b\uff09 \u5c0f\u6642"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "mouth",
+            "Zhuyin": "\u3117\u3128\u311f\u02c7 \u3105\u311a\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zu\u01d0ba",
+            "Hanzi": "\u5634\u5df4"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:39:00+00:00",
+            "English": "to plan",
+            "Zhuyin": "\u3109\u311a\u02c7 \u3119\u3128\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:39:00+00:00",
+            "Pinyin": "d\u01cesu\u00e0n",
+            "Hanzi": "\u6253\u7b97"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "how old are you",
+            "Zhuyin": "\u310b\u3127\u02c7 \u3109\u3128\u311b \u3109\u311a\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u591a \u5927",
+            "Timestamp": "2021-05-16T11:38:00+00:00",
+            "Pinyin": "n\u01d0 du\u014d d\u00e0",
+            "Hanzi": "\u4f60 \u591a \u5927"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "white",
+            "Zhuyin": "\u3105\u311e\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00e1is\u00e8",
+            "Hanzi": "\u767d\u8272"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:06:00+00:00",
+            "English": "but (use often)",
+            "Zhuyin": "\u310e\u311c\u02c7 \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:06:00+00:00",
+            "Pinyin": "k\u011bsh\u00ec",
+            "Hanzi": "\u53ef\u662f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "next week",
+            "Zhuyin": "\u3112\u3127\u311a\u02cb \u3112\u3127\u3125 \u3111\u3127",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u00e0x\u012bngq\u012b",
+            "Hanzi": "\u4e0b\u661f\u671f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "(ROC) calendar",
+            "Zhuyin": "\uff08\u3113\u3128\u3125 \u310f\u3128\u311a\u02ca\uff09\u3107\u3127\u3123\u02ca \u310d\u3128\u311b\u02ca",
+            "Subtags": [
+                "time-date"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "\uff08Zh\u014dnghu\u00e1\uff09M\u00edngu\u00f3",
+            "Hanzi": "\uff08\u4e2d\u83ef\uff09\u6c11\u570b"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "legs",
+            "Zhuyin": "\u310a\u3128\u311f\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "tu\u01d0",
+            "Hanzi": "\u817f"
+        },
+        {
+            "Tags": [
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "half marathon",
+            "Zhuyin": "\u3105\u3122\u02cb \u3107\u311a\u02c7",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:28:00+00:00",
+            "Pinyin": "b\u00e0nm\u01ce",
+            "Hanzi": "\u534a\u99ac"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "yellow",
+            "Zhuyin": "\u310f\u3128\u3124\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:21:00+00:00",
+            "Pinyin": "hu\u00e1ngs\u00e8",
+            "Hanzi": "\u9ec3\u8272"
+        },
+        {
+            "Tags": [
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "video games",
+            "Zhuyin": "\u3115\u02cb \u3106\u3127\u3123\u02ca \u3127\u3121\u02ca \u3112\u3127\u02cb",
+            "Subtags": [
+                "hobbies-hobbies"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-20T12:29:00+00:00",
+            "Pinyin": "sh\u00ecp\u00edn y\u00f3ux\u00ec",
+            "Hanzi": "\u8996\u983b\u904a\u6232"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "meet up",
+            "Zhuyin": "\u3110\u3127\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ji\u00e0n",
+            "Hanzi": "\u898b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:17:00+00:00",
+            "English": "go downstairs",
+            "Zhuyin": "\u3112\u3127\u311a\u02cb \u310c\u3121\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:17:00+00:00",
+            "Pinyin": "xi\u00e0l\u00f3u",
+            "Hanzi": "\u4e0b\u6a13"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:03:00+00:00",
+            "English": "advice",
+            "Zhuyin": "\u3110\u3127\u3122\u02cb \u3127\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:03:00+00:00",
+            "Pinyin": "ji\u00e0ny\u00ec",
+            "Hanzi": "\u5efa\u8b70"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:36:00+00:00",
+            "English": "is for; to use",
+            "Zhuyin": "\u3129\u3125\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:36:00+00:00",
+            "Pinyin": "y\u00f2ng",
+            "Hanzi": "\u7528"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:27:00+00:00",
+            "English": "to let; to make",
+            "Zhuyin": "\u3116\u3124\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:27:00+00:00",
+            "Pinyin": "r\u00e0ng",
+            "Hanzi": "\u8b93"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "year 1993 (western style)",
+            "Zhuyin": "\u3112\u3127 \u3129\u3122\u02ca ",
+            "Subtags": [
+                "time-date"
+            ],
+            "Examples & Usage": "\u897f\u5143 ####\nYear #### (western style)",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "x\u012byu\u00e1n ",
+            "Hanzi": "\u897f\u5143 1993"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "next week",
+            "Zhuyin": "\u3112\u3127\u311a\u02cb \u3113\u3121",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u00e0zh\u014du",
+            "Hanzi": "\u4e0b\u9031"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "bad/ difficult to write",
+            "Zhuyin": "\u310f\u3123\u02c7 \u310b\u3122\u02ca \u3112\u3127\u311d\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "bad/ difficult to v.",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "h\u011bnn\u00e1nxi\u011b",
+            "Hanzi": "\u5f88\u96e3\u5beb"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:18:00+00:00",
+            "English": "morning",
+            "Zhuyin": "\u3117\u3120\u02c7 \u3115\u3124\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:18:00+00:00",
+            "Pinyin": "z\u01ceoshang",
+            "Hanzi": "\u65e9\u4e0a"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Saturday and Sunday or national holiday",
+            "Zhuyin": "\u3110\u3127\u311a\u02cb \u3116\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ji\u00e0r\u00ec",
+            "Hanzi": "\u5047\u65e5"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Family Mart",
+            "Zhuyin": "\u3111\u3129\u3122\u02ca \u3110\u3127\u311a",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:21:00+00:00",
+            "Pinyin": "qu\u00e1nji\u0101",
+            "Hanzi": "\u5168\u5bb6"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "sea; ocean",
+            "Zhuyin": "\u310f\u311e\u02c7 \u310f\u311e\u02c7 \u3127\u3124\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:54:00+00:00",
+            "Pinyin": "h\u01cei h\u01ceiy\u00e1ng",
+            "Hanzi": "\u6d77/ \u6d77\u6d0b"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "landlord",
+            "Zhuyin": "\u3108\u3124\u02ca \u3109\u3128\u3125",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "f\u00e1ngd\u014dng",
+            "Hanzi": "\u623f\u6771"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:27:00+00:00",
+            "English": "high salary",
+            "Zhuyin": "\u310d\u3120 \u3112\u3127\u3123",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:27:00+00:00",
+            "Pinyin": "g\u0101ox\u012bn",
+            "Hanzi": "\u9ad8\u85aa"
+        },
+        {
+            "Tags": [
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "board game",
+            "Zhuyin": "\u3113\u3128\u311b \u3127\u3121\u02ca",
+            "Subtags": [
+                "hobbies-hobbies"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zhu\u014dy\u00f3u",
+            "Hanzi": "\u684c\u904a"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "My former school",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3113 \u3111\u3127\u3122\u02ca \u3109\u311c\u02d9 \u3112\u3129\u311d\u02ca \u3112\u3127\u3120\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u01d2 zh\u012b qi\u00e1n de xu\u00e9xi\u00e0o",
+            "Hanzi": "\u6211 \u4e4b \u524d \u7684 \u5b78\u6821"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "inconvenient",
+            "Zhuyin": "\u3105\u3128\u02cb \u3108\u3124 \u3105\u3127\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00f9 f\u0101ngbi\u00e0n",
+            "Hanzi": "\u4e0d \u65b9\u4fbf"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "purple",
+            "Zhuyin": "\u3117\u02c7 \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "z\u01d0s\u00e8",
+            "Hanzi": "\u7d2b\u8272"
+        },
+        {
+            "Tags": [
+                "routine"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to do chores",
+            "Zhuyin": "\u3117\u3128\u311b\u02cb \u3110\u3127\u311a \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zu\u00f2ji\u0101sh\u00ec",
+            "Hanzi": "\u505a\u5bb6\u4e8b"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "banana",
+            "Zhuyin": "\u3112\u3127\u3124 \u3110\u3127\u3120",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-27T18:57:00+00:00",
+            "Pinyin": "xi\u0101ngji\u0101o",
+            "Hanzi": "\u9999\u8549"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:36:00+00:00",
+            "English": "hang gliding",
+            "Zhuyin": "\u310f\u3128\u311a\u02ca \u3112\u3127\u3124\u02ca \u3127\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:36:00+00:00",
+            "Pinyin": "hu\u00e1xi\u00e1ngy\u00ec",
+            "Hanzi": "\u6ed1\u7fd4\u7ffc"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "corn omelette",
+            "Zhuyin": "\u3129\u02cb \u3107\u3127\u02c7 \u3110\u3127\u3122 \u3109\u3122\u02cb",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00f9m\u01d0 ji\u0101nd\u00e0n",
+            "Hanzi": "\u7389\u7c73 \u714e\u86cb"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "tall",
+            "Zhuyin": "\u310d\u3120",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "g\u0101o",
+            "Hanzi": "\u9ad8"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I cook by myself",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3117\u02cb \u3110\u3127\u02c7 \u3117\u3128\u311b\u02cb \u3113\u3128\u02c7 \u3108\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u81ea\u5df1 V. O. \nS. do/does something by one's self",
+            "Timestamp": "2021-05-16T11:12:00+00:00",
+            "Pinyin": "w\u01d2z\u00ecj\u01d0 zu\u00f2zh\u01d4f\u00e0n",
+            "Hanzi": "\u6211\u81ea\u5df1 \u505a/\u716e\u98ef"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "tomorrow",
+            "Zhuyin": "\u3107\u3127\u3125\u02ca \u310a\u3127\u3122",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "m\u00edngti\u0101n",
+            "Hanzi": "\u660e\u5929"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "the same",
+            "Zhuyin": "\u3127 \u3127\u3124\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u012by\u00e0ng",
+            "Hanzi": "\u4e00\u6a23"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "brown (use often)",
+            "Zhuyin": "\u310e\u311a \u3108\u311f \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "k\u0101f\u0113is\u00e8",
+            "Hanzi": "\u5496\u5561\u8272"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "week",
+            "Zhuyin": "\u3113\u3121",
+            "Subtags": [
+                "time-date"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zh\u014du",
+            "Hanzi": "\u9031"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "if it's because ...",
+            "Zhuyin": "\u3115\u02cb \u3105\u3128\u02cb \u3115\u02cb \u3127\u3123 \u3128\u311f\u02cb ",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u00ec b\u00f9sh\u00ec y\u012bnw\u00e8i ",
+            "Hanzi": "\u662f \u4e0d\u662f \u56e0\u70ba ..."
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to use",
+            "Zhuyin": "\u3129\u3125\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-11T19:10:00+00:00",
+            "Pinyin": "y\u00f2ng",
+            "Hanzi": "\u7528"
+        },
+        {
+            "Tags": [
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to play",
+            "Zhuyin": "\u3109\u311a\u02c7",
+            "Subtags": [
+                "hobbies-verbs"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "d\u01ce",
+            "Hanzi": "\u6253"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "foot",
+            "Zhuyin": "\u3110\u3127\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ji\u01ceo",
+            "Hanzi": "\u8173"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "pink",
+            "Zhuyin": "\u3108\u3123\u02c7 \u310f\u3128\u3125\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "f\u011bn h\u00f3ngs\u00e8",
+            "Hanzi": "\u7c89 \u7d05\u8272"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "knee",
+            "Zhuyin": "\u3112\u3127 \u310d\u311e\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "x\u012bg\u00e0i",
+            "Hanzi": "\u819d\u84cb"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "can you say it again? thank you",
+            "Zhuyin": "\u310e\u311c\u02c7 \u3127\u02c7 \u3117\u311e\u02cb \u3115\u3128\u311b \u3127 \u3118\u02cb \u3107\u311a\u02d9 \u3112\u3127\u311d\u02cb \u3112\u3127\u311d\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:47:00+00:00",
+            "Pinyin": "k\u011by\u01d0 z\u00e0i shu\u014d y\u012bc\u00ec ma xi\u00e8xie",
+            "Hanzi": "\u53ef\u4ee5 \u518d \u8aaa \u4e00\u6b21 \u55ce? \u8b1d\u8b1d"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:06:00+00:00",
+            "English": "but",
+            "Zhuyin": "\u3109\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:06:00+00:00",
+            "Pinyin": "d\u00e0n",
+            "Hanzi": "\u4f46"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "me, too",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3127\u311d\u02c7 \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "S. \u4e5f\u662f",
+            "Timestamp": "2021-05-25T10:37:00+00:00",
+            "Pinyin": "w\u01d2 y\u011b sh\u00ec",
+            "Hanzi": "\u6211 \u4e5f \u662f"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I'm bored today",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3110\u3127\u3123 \u310a\u3127\u3122 \u310f\u3123\u02c7 \u3128\u02ca \u310c\u3127\u3120\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "S. Time Word \u5f88 adj.",
+            "Timestamp": "2021-05-25T10:40:00+00:00",
+            "Pinyin": "w\u01d2 j\u012bnti\u0101n h\u011bn w\u00fali\u00e1o",
+            "Hanzi": "\u6211 \u4eca\u5929 \u5f88 \u7121\u804a"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "anywhere; anyplace",
+            "Zhuyin": "\u3116\u3123\u02cb \u310f\u311c\u02ca \u3109\u3127\u02cb \u3108\u3124\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:41:00+00:00",
+            "Pinyin": "r\u00e8nh\u00e9 d\u00ecfang",
+            "Hanzi": "\u4efb\u4f55 \u5730\u65b9"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "flashlight",
+            "Zhuyin": "\u3115\u3121\u02c7 \u3109\u3127\u3122\u02cb \u310a\u3128\u3125\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:24:00+00:00",
+            "Pinyin": "sh\u01d2udi\u00e0nt\u01d2ng",
+            "Hanzi": "\u624b\u96fb\u7b52"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "yesterday",
+            "Zhuyin": "\u3117\u3128\u311b\u02ca \u310a\u3127\u3122",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zu\u00f3ti\u0101n",
+            "Hanzi": "\u6628\u5929"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "baby",
+            "Zhuyin": "\u3105\u3120\u02c7 \u3105\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:36:00+00:00",
+            "Pinyin": "b\u01ceob\u01ceo",
+            "Hanzi": "\u5bf6\u5bf6"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "sick",
+            "Zhuyin": "\u3115\u3125 \u3105\u3127\u3125\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:34:00+00:00",
+            "Pinyin": "sh\u0113ngb\u00ecng",
+            "Hanzi": "\u751f\u75c5"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Sushi",
+            "Zhuyin": "\u3115\u3121\u02cb \u3119",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u00f2us\u012b",
+            "Hanzi": "\u58fd\u53f8"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "kid; children",
+            "Zhuyin": "\u3112\u3127\u3120\u02c7 \u310f\u311e\u02ca \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u01ceoh\u00e1izi",
+            "Hanzi": "\u5c0f\u5b69\u5b50"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "this is red",
+            "Zhuyin": "\u3113\u311c\u02cb \u3115\u02cb \u310f\u3128\u3125\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "this is + color",
+            "Timestamp": "2021-05-16T10:05:00+00:00",
+            "Pinyin": "zh\u00e8sh\u00ec h\u00f3ngs\u00e8",
+            "Hanzi": "\u9019\u662f \u7d05\u8272"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "You with your mom...",
+            "Zhuyin": "\u310b\u3127\u02c7 \u3106\u311f\u02cb \u310b\u3127\u02c7 \u3109\u311c\u02d9 \u3107\u311a \u3107\u311a\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "n1. / O1. \u914d n2./ O2.\nn1. / O1. with n2./ O2.",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "n\u01d0 p\u00e8i n\u01d0 de m\u0101ma",
+            "Hanzi": "\u4f60 \u914d \u4f60 \u7684 \u5abd\u5abd"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "my home is far from school",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3110\u3127\u311a \u310c\u3127\u02ca \u3112\u3129\u311d\u02ca \u3112\u3127\u3120\u02cb \u310f\u3123\u02c7 \u3129\u3122\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "place1 \u96e2 place2 \u5f88 \u9060",
+            "Timestamp": "2021-05-25T10:49:00+00:00",
+            "Pinyin": "w\u01d2 ji\u0101 l\u00ed xu\u00e9xi\u00e0o h\u011bn yu\u01cen",
+            "Hanzi": "\u6211 \u5bb6 \u96e2 \u5b78\u6821 \u5f88 \u9060"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "French (language)",
+            "Zhuyin": "\u3108\u311a\u02c7 \u3128\u3123\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "F\u01cew\u00e9n",
+            "Hanzi": "\u6cd5\u6587"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Hospital",
+            "Zhuyin": "\u3127 \u3129\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u012byu\u00e0n",
+            "Hanzi": "\u91ab\u9662"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:09:00+00:00",
+            "English": "or",
+            "Zhuyin": "\u310f\u3128\u311b\u02cb \u3113\u311c\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:09:00+00:00",
+            "Pinyin": "hu\u00f2zh\u011b",
+            "Hanzi": "\u6216\u8005"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "There is a park in front of my house",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3110\u3127\u311a \u3111\u3127\u3122\u02ca \u3107\u3127\u3122\u02cb \u3127\u3121\u02c7 \u310d\u3128\u3125 \u3129\u3122\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "S. + n. + direction + \u6709+ n. ",
+            "Timestamp": "2021-05-25T10:52:00+00:00",
+            "Pinyin": "w\u01d2ji\u0101 qi\u00e1nmi\u00e0n y\u01d2u g\u014dngyu\u00e1n",
+            "Hanzi": "\u6211\u5bb6 \u524d\u9762 \u6709 \u516c\u5712"
+        },
+        {
+            "Tags": [
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "badminton",
+            "Zhuyin": "\u3129\u02c7 \u3107\u3120\u02ca \u3111\u3127\u3121\u02ca",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u01d4m\u00e1oqi\u00fa",
+            "Hanzi": "\u7fbd\u6bdb\u7403"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "soup",
+            "Zhuyin": "\u310a\u3124",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "t\u0101ng",
+            "Hanzi": "\u6e6f"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "first ",
+            "Zhuyin": "\u3109\u3127\u02cb ",
+            "Subtags": [],
+            "Examples & Usage": "\u7b2c # measure word",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "d\u00ec y\u012b ge",
+            "Hanzi": "\u7b2c \u4e00 \u500b"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "India (country)",
+            "Zhuyin": "\u3127\u3123\u02cb \u3109\u3128\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "Y\u00ecnd\u00f9",
+            "Hanzi": "\u5370\u5ea6"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:34:00+00:00",
+            "English": "happy",
+            "Zhuyin": "\u310e\u3128\u311e\u02cb \u310c\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:34:00+00:00",
+            "Pinyin": "ku\u00e0il\u00e8",
+            "Hanzi": "\u5feb\u6a02"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "short (in length) for people",
+            "Zhuyin": "\u311e\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:04:00+00:00",
+            "Pinyin": "\u01cei",
+            "Hanzi": "\u77ee"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:23:00+00:00",
+            "English": "have/ has heard",
+            "Zhuyin": "\u310a\u3127\u3125 \u3115\u3128\u311b",
+            "Subtags": [],
+            "Examples & Usage": "S. has/ have heard......",
+            "Timestamp": "2021-05-30T13:23:00+00:00",
+            "Pinyin": "t\u012bngshu\u014d",
+            "Hanzi": "\u807d\u8aaa"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "he/ she",
+            "Zhuyin": "\u310a\u311a",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:08:00+00:00",
+            "Pinyin": "t\u0101",
+            "Hanzi": "\u4ed6"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "next week",
+            "Zhuyin": "\u3112\u3127\u311a\u02cb \u310c\u3127\u02c7 \u3105\u311e\u02cb",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u00e0l\u01d0b\u00e0i",
+            "Hanzi": "\u4e0b\u79ae\u62dc"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:38:00+00:00",
+            "English": "I've never gone to hang gliding",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3118\u3128\u3125\u02ca \u310c\u311e\u02ca \u3107\u311f\u02ca \u3127\u3121\u02c7 \u310f\u3128\u311a\u02ca \u310d\u3128\u311b\u02cb \u310f\u3128\u311a\u02ca \u3112\u3127\u3124\u02ca \u3127\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:38:00+00:00",
+            "Pinyin": "w\u01d2 c\u00f3ngl\u00e1i m\u00e9iy\u01d2u hu\u00e1 gu\u00f2 hu\u00e1xi\u00e1ngy\u00ec",
+            "Hanzi": "\u6211 \u5f9e\u4f86 \u6c92\u6709 \u6ed1 \u904e \u6ed1\u7fd4\u7ffc"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "France",
+            "Zhuyin": "\u3108\u311a\u02c7 \u310d\u3128\u311b\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "F\u01cegu\u00f3",
+            "Hanzi": "\u6cd5\u570b"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "that is",
+            "Zhuyin": "\u310b\u311a\u02cb \u3115\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "that is + n.\n\u90a3\u662f\u7d05\u8272\u7684\u4e0a\u8863\n(that is a red top)",
+            "Timestamp": "2021-05-16T10:05:00+00:00",
+            "Pinyin": "n\u00e0shi",
+            "Hanzi": "\u90a3\u662f"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "the most beautiful woman",
+            "Zhuyin": "\u3117\u3128\u311f\u02cb \u3106\u3127\u3120\u02cb \u310c\u3127\u3124\u02d9 \u3109\u311c\u02d9 \u310b\u3129\u02c7 \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "\u6700 a. \u7684 n. / O.\nthe most a. n./O.",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zu\u00ec pi\u00e0oliang de n\u01dash\u00ec",
+            "Hanzi": "\u6700 \u6f02\u4eae \u7684 \u5973\u58eb"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to go up the hill/ mountain",
+            "Zhuyin": "\u3115\u3124\u02cb \u3115\u3122",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:49:00+00:00",
+            "Pinyin": "sh\u00e0ngsh\u0101n",
+            "Hanzi": "\u4e0a\u5c71"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Sun Moon Lake",
+            "Zhuyin": "\u3116\u02cb \u3129\u311d\u02cb \u310a\u3122\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:51:00+00:00",
+            "Pinyin": "R\u00ecyu\u00e8t\u00e1n",
+            "Hanzi": "\u65e5\u6708\u6f6d"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to spend 10 dollars",
+            "Zhuyin": "\u310f\u3128\u311a \u310c\u311c\u02d9 + $",
+            "Subtags": [],
+            "Examples & Usage": "with \u4e86 will be the past tense\n\u82b1\u4e86 + $/time",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "hu\u0101le + $",
+            "Hanzi": "\u82b1\u4e86 \u5341 \u5143"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "my home is close to school",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3110\u3127\u311a \u310c\u3127\u02ca \u3112\u3129\u311d\u02ca \u3112\u3127\u3120\u02cb \u310f\u3123\u02c7 \u3110\u3127\u3123\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "place1 \u96e2 place2 \u5f88 \u8fd1",
+            "Timestamp": "2021-05-25T10:50:00+00:00",
+            "Pinyin": "w\u01d2 ji\u0101 l\u00ed xu\u00e9xi\u00e0o h\u011bn j\u00ecn",
+            "Hanzi": "\u6211 \u5bb6 \u96e2 \u5b78\u6821 \u5f88 \u8fd1"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "# minutes",
+            "Zhuyin": "\u3108\u3123 \u3113\u3128\u3125",
+            "Subtags": [
+                "time-time"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": " f\u0113nzh\u014dng",
+            "Hanzi": "# \u5206\u9418"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "cheese",
+            "Zhuyin": "\u3111\u3127\u02c7 \u3119",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "q\u01d0s\u012b",
+            "Hanzi": "\u8d77\u53f8"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to laugh (a level up than to smile)",
+            "Zhuyin": "\u3109\u311a\u02cb \u3112\u3127\u3120\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "d\u00e0xi\u00e0o",
+            "Hanzi": "\u5927\u7b11"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "chef",
+            "Zhuyin": "\u3114\u3128\u02ca \u3115",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:39:00+00:00",
+            "Pinyin": "ch\u00fash\u012b",
+            "Hanzi": "\u5eda\u5e2b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:09:00+00:00",
+            "English": "or",
+            "Zhuyin": "\u310f\u3128\u311b\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:09:00+00:00",
+            "Pinyin": "hu\u00f2",
+            "Hanzi": "\u6216"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "you and I stand together",
+            "Zhuyin": "\u3128\u311b\u02c7 \u310f\u311c\u02ca \u310b\u3127\u02c7 \u3113\u3122\u02cb \u3117\u311e\u02cb \u3127 \u3111\u3127\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "S1. \u548cS2. \u7ad9\u5728\u4e00\u8d77\nS1. and S2. stands together",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u01d2 h\u00e9 n\u01d0 zh\u00e0nz\u00e0i y\u012bq\u01d0",
+            "Hanzi": "\u6211 \u548c \u4f60 \u7ad9\u5728 \u4e00\u8d77"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "high school student",
+            "Zhuyin": "\u310d\u3120 \u3113\u3128\u3125 \u3115\u3125",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "g\u0101ozh\u014dngsh\u0113ng",
+            "Hanzi": "\u9ad8\u4e2d\u751f"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "bored; boring",
+            "Zhuyin": "\u3128\u02ca \u310c\u3127\u3120\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:40:00+00:00",
+            "Pinyin": "w\u00fali\u00e1o",
+            "Hanzi": "\u7121\u804a"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:19:00+00:00",
+            "English": "to have the class",
+            "Zhuyin": "\u3115\u3124\u02cb \u310e\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:19:00+00:00",
+            "Pinyin": "sh\u00e0ngk\u00e8",
+            "Hanzi": "\u4e0a\u8ab2"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "red top",
+            "Zhuyin": "\u310f\u3128\u3125\u02ca \u3119\u311c\u02cb \u3109\u311c\u02d9 \u3115\u3124\u02cb \u3127",
+            "Subtags": [],
+            "Examples & Usage": "color+clothes ",
+            "Timestamp": "2021-05-16T10:00:00+00:00",
+            "Pinyin": "h\u00f3ngs\u00e8de sh\u00e0ngy\u012b",
+            "Hanzi": "\u7d05\u8272\u7684 \u4e0a\u8863"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:21:00+00:00",
+            "English": "I never been to HuaLien but plan to go in the future",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3118\u3128\u3125\u02ca \u310c\u311e\u02ca \u3107\u311f\u02ca(\u3127\u3121\u02c7) \u3111\u3129\u02cb \u310d\u3128\u311b\u02cb \u310f\u3128\u311a \u310c\u3127\u3122\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "S. \u5f9e\u4f86 \u6c92(\u6709) V. \u904e O.\nS. has/ have never done VO before but plan to do in the future",
+            "Timestamp": "2021-05-30T13:21:00+00:00",
+            "Pinyin": "w\u01d2 c\u00f3ngl\u00e1i m\u00e9i(y\u01d2u) q\u00f9 gu\u00f2 Hu\u0101li\u00e1n",
+            "Hanzi": "\u6211 \u5f9e\u4f86 \u6c92(\u6709) \u53bb \u904e \u82b1\u84ee"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "shoulder",
+            "Zhuyin": "\u3110\u3127\u3122 \u3105\u3124\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ji\u0101nb\u01ceng",
+            "Hanzi": "\u80a9\u8180"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "fake",
+            "Zhuyin": "\u3110\u3127\u311a\u02c7 \u3109\u311c\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T11:37:00+00:00",
+            "Pinyin": "ji\u01cede",
+            "Hanzi": "\u5047\u7684"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "we, our",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3107\u3123\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:09:00+00:00",
+            "Pinyin": "w\u01d2men",
+            "Hanzi": "\u6211\u5011"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "key",
+            "Zhuyin": "\u3127\u3120\u02cb \u3115\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-27T19:04:00+00:00",
+            "Pinyin": "y\u00e0oshi",
+            "Hanzi": "\u9470\u5319"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "you (singular)",
+            "Zhuyin": "\u310b\u3127\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:08:00+00:00",
+            "Pinyin": "n\u01d0",
+            "Hanzi": "\u4f60"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:24:00+00:00",
+            "English": "I've heard you love Ms. Zhang.",
+            "Zhuyin": "\u3128\u311b\u02c7 \u310a\u3127\u3125 \u3115\u3128\u311b \u310b\u3127\u02c7 \u311e\u02cb \u3113\u3124 \u3112\u3127\u3120\u02c7 \u3110\u3127\u311d\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "S. has/ have heard......",
+            "Timestamp": "2021-05-30T13:24:00+00:00",
+            "Pinyin": "w\u01d2 t\u012bngshu\u014d n\u01d0 \u00e0i zh\u0101ng xi\u01ceojie",
+            "Hanzi": "\u6211 \u807d\u8aaa \u4f60 \u611b \u5f35 \u5c0f\u59d0"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "height",
+            "Zhuyin": "\u3115\u3123 \u310d\u3120",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u0113ng\u0101o",
+            "Hanzi": "\u8eab\u9ad8"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:07:00+00:00",
+            "English": "half salary",
+            "Zhuyin": "\u3105\u3122\u02cb \u3112\u3127\u3123",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:07:00+00:00",
+            "Pinyin": "b\u00e0nx\u012bn",
+            "Hanzi": "\u534a\u85aa"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "# seconds",
+            "Zhuyin": "\u3115\u02ca \u3107\u3127\u3120\u02c7 \u3113\u3128\u3125",
+            "Subtags": [
+                "time-time"
+            ],
+            "Examples & Usage": "\u5341 \u79d2\u9418\n# seconds",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u00ed mi\u01ceozh\u014dng",
+            "Hanzi": "\u5341 \u79d2\u9418"
+        },
+        {
+            "Tags": [
+                "places",
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "sports center",
+            "Zhuyin": "\u3129\u3123\u02cb \u3109\u3128\u3125\u02cb \u3113\u3128\u3125 \u3112\u3127\u3123",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00f9nd\u00f2ng zh\u014dngx\u012bn",
+            "Hanzi": "\u904b\u52d5 \u4e2d\u5fc3"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I'm not going to go to anywhere/anyplace tomorrow.",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3107\u3127\u3125\u02ca \u310a\u3127\u3122 \u3105\u3128\u02cb \u3111\u3129\u02cb \u3116\u3123\u02cb \u310f\u311c\u02ca \u3109\u3127\u02cb \u3108\u3124\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "S. Time Word+negative word+v.+place",
+            "Timestamp": "2021-05-25T10:42:00+00:00",
+            "Pinyin": "w\u01d2 m\u00edngti\u0101n b\u00f9 q\u00f9 r\u00e8nh\u00e9 d\u00ecfang",
+            "Hanzi": "\u6211 \u660e\u5929 \u4e0d \u53bb \u4efb\u4f55 \u5730\u65b9"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "fried rice",
+            "Zhuyin": "\u3114\u3120\u02c7 \u3108\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ch\u01ceof\u00e0n",
+            "Hanzi": "\u7092\u98ef"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "they (female)",
+            "Zhuyin": "\u310a\u311a \u3107\u3123\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:10:00+00:00",
+            "Pinyin": "t\u0101men",
+            "Hanzi": "\u5979\u5011"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "fridge",
+            "Zhuyin": "\u3105\u3127\u3125 \u3112\u3127\u3124",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:44:00+00:00",
+            "Pinyin": "b\u012bngxi\u0101ng",
+            "Hanzi": "\u51b0\u7bb1"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "some",
+            "Zhuyin": "\u3127\u3121\u02c7(\u3127)\u3112\u3127\u311d",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u01d2u(y\u012b)xi\u0113",
+            "Hanzi": "\u6709(\u4e00)\u4e9b"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "long (in length) - not people",
+            "Zhuyin": "\u3113\u3124\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zh\u01ceng",
+            "Hanzi": "\u9577"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "ghost house/ haunted attraction (at the amusement park)",
+            "Zhuyin": "\u310d\u3128\u311f\u02c7 \u3128",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "gu\u01d0w\u016b",
+            "Hanzi": "\u9b3c\u5c4b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "5 hours",
+            "Zhuyin": "\u3128\u02c7 \u310d\u311c\u02cb \u3113\u3128\u3125 \u310a\u3121\u02ca",
+            "Subtags": [
+                "time-time"
+            ],
+            "Examples & Usage": "# \uff08\u500b\uff09 \u9418\u982d\n\u4e94 \u500b \u9418\u982d",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u01d4 g\u00e8 zh\u014dngt\u00f3u",
+            "Hanzi": "\u4e94 \u500b \u9418\u982d"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "sad; upset",
+            "Zhuyin": "\u310b\u3122\u02ca \u310d\u3128\u311b\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "n\u00e1ngu\u00f2",
+            "Hanzi": "\u96e3\u904e"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "back",
+            "Zhuyin": "\u3105\u311f\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00e8i",
+            "Hanzi": "\u80cc"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to write",
+            "Zhuyin": "\u3112\u3127\u311d\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u011b",
+            "Hanzi": "\u5beb"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "please say it again, thank you",
+            "Zhuyin": "\u3111\u3127\u3125\u02c7 \u3117\u311e\u02cb \u3115\u3128\u311b \u3127 \u3118\u02cb\uff0c\u3112\u3127\u311d\u02cb \u3112\u3127\u311d\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:46:00+00:00",
+            "Pinyin": "q\u01d0ng z\u00e0i shu\u014d y\u012bc\u00ec\uff0cxi\u00e8xie",
+            "Hanzi": "\u8acb \u518d \u8aaa \u4e00\u6b21\uff0c\u8b1d\u8b1d"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:26:00+00:00",
+            "English": "heatstroke",
+            "Zhuyin": "\u3113\u3128\u3125\u02cb \u3115\u3128\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:26:00+00:00",
+            "Pinyin": "zh\u00f2ngsh\u01d4",
+            "Hanzi": "\u4e2d\u6691"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:01:00+00:00",
+            "English": "evening/ night",
+            "Zhuyin": "\u3128\u3122\u02c7 \u3115\u3124\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:01:00+00:00",
+            "Pinyin": "w\u01censhang",
+            "Hanzi": "\u665a\u4e0a"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "angry",
+            "Zhuyin": "\u3115\u3125 \u3111\u3127\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u0113ngq\u00ec",
+            "Hanzi": "\u751f\u6c23"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "because (1st thing) so (2nd thing)",
+            "Zhuyin": "\u3127\u3123 \u3128\u311f\u02cb \u3119\u3128\u311b\u02c7 \u3127\u02c7 ",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u012bnw\u00e8i su\u01d2y\u01d0 ",
+            "Hanzi": "\u56e0\u70ba ... \u6240\u4ee5 ..."
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Indian (people)",
+            "Zhuyin": "\u3127\u3123\u02cb \u3109\u3128\u02cb \u3116\u3123\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "Y\u00ecnd\u00f9r\u00e9n",
+            "Hanzi": "\u5370\u5ea6\u4eba"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "hot dog",
+            "Zhuyin": "\u3116\u311c\u02cb \u310d\u3121\u02c7",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "r\u00e8g\u01d2u",
+            "Hanzi": "\u71b1\u72d7"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "gray",
+            "Zhuyin": "\u310f\u3128\u311f \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:23:00+00:00",
+            "Pinyin": "hu\u012bs\u00e8",
+            "Hanzi": "\u7070\u8272"
+        },
+        {
+            "Tags": [
+                "routine",
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to send message or to pass the ball",
+            "Zhuyin": "\u3114\u3128\u3122\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "chu\u00e1n",
+            "Hanzi": "\u50b3"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "orange (use often)",
+            "Zhuyin": "\u3110\u3129\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:22:00+00:00",
+            "Pinyin": "j\u00fas\u00e8",
+            "Hanzi": "\u6a58\u8272"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "hand",
+            "Zhuyin": "\u3115\u3121\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u01d2u",
+            "Hanzi": "\u624b"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I don't know a lot",
+            "Zhuyin": "\u3128\u311b\u02c7 \u310f\u3128\u311f\u02cb \u3109\u311c\u02d9 \u3105\u3128\u02cb \u3109\u3128\u311b",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:38:00+00:00",
+            "Pinyin": "w\u01d2 hu\u00ecde b\u00f9du\u014d",
+            "Hanzi": "\u6211 \u6703\u7684 \u4e0d\u591a"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "wednesday",
+            "Zhuyin": "\u3113\u3121 ",
+            "Subtags": [
+                "time-weekday"
+            ],
+            "Examples & Usage": "\u9031 #\nday of the week #",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "zh\u014du ",
+            "Hanzi": "\u9031 \u4e09"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-30T13:17:00+00:00",
+            "English": "gym",
+            "Zhuyin": "\u3110\u3127\u3122\u02cb \u3115\u3123 \u3108\u3124\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:17:00+00:00",
+            "Pinyin": "ji\u00e0nsh\u0113nf\u00e1ng",
+            "Hanzi": "\u5065\u8eab\u623f"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "milk tea",
+            "Zhuyin": "\u310b\u311e\u02c7 \u3114\u311a\u02ca",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "n\u01ceich\u00e1",
+            "Hanzi": "\u5976\u8336"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:03:00+00:00",
+            "English": "I didn't go to many places on Saturday",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3112\u3127\u3125 \u3111\u3127 \u310c\u3127\u3121\u02cb \u3107\u311f\u02ca \u3111\u3129\u02cb \u310f\u3123\u02c7 \u3109\u3128\u311b \u3109\u3127\u02cb \u3108\u3124\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "S.+ Time Word+ \u6c92+ V.+ \u5f88\u591a+ N.",
+            "Timestamp": "2021-05-30T13:03:00+00:00",
+            "Pinyin": "w\u01d2 X\u012bngq\u012bli\u00f9 m\u00e9i q\u00f9 h\u011bndu\u014d d\u00ecfang",
+            "Hanzi": "\u6211 \u661f\u671f\u516d \u6c92 \u53bb \u5f88\u591a \u5730\u65b9"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Any food in your fridge?",
+            "Zhuyin": "\u310b\u3127\u02c7 \u3109\u311c\u02d9 \u3105\u3127\u3125 \u3112\u3127\u3124 \u3127\u3121\u02c7 \u3115\u02ca \u3128\u02cb \u3107\u311a\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "S. + \u7684+ n. + \u6709 +n.",
+            "Timestamp": "2021-05-25T10:44:00+00:00",
+            "Pinyin": "n\u01d0de b\u012bngxi\u0101ng y\u01d2u sh\u00edw\u00f9 ma",
+            "Hanzi": "\u4f60\u7684 \u51b0\u7bb1 \u6709 \u98df\u7269 \u55ce?"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "long weekend",
+            "Zhuyin": "\u310c\u3127\u3122\u02ca \u3110\u3127\u311a\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "li\u00e1nji\u01ce",
+            "Hanzi": "\u9023\u5047"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "guard",
+            "Zhuyin": "\u3110\u3127\u3125\u02c7 \u3128\u311f\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-27T19:20:00+00:00",
+            "Pinyin": "j\u01d0ngw\u00e8i",
+            "Hanzi": "\u8b66\u885b"
+        },
+        {
+            "Tags": [
+                "routine"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to wash or to clean",
+            "Zhuyin": "\u3112\u3127\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "x\u01d0",
+            "Hanzi": "\u6d17"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "this year",
+            "Zhuyin": "\u3110\u3127\u3123 \u310b\u3127\u3122\u02ca",
+            "Subtags": [
+                "time-relative"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-23T20:46:00+00:00",
+            "Pinyin": "j\u012bnnian",
+            "Hanzi": "\u4eca\u5e74"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "whiteboard",
+            "Zhuyin": "\u3105\u311e\u02ca \u3105\u3122\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "b\u00e1ib\u01cen",
+            "Hanzi": "\u767d\u677f"
+        },
+        {
+            "Tags": [
+                "people"
+            ],
+            "Last Created": "2021-05-30T13:42:00+00:00",
+            "English": "son",
+            "Zhuyin": "\u3126\u02ca \u3117\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:42:00+00:00",
+            "Pinyin": "\u00e9rzi",
+            "Hanzi": "\u5152\u5b50"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "cereal bar",
+            "Zhuyin": "\u310d\u3128\u02c7 \u3128\u02cb \u3105\u3124\u02cb",
+            "Subtags": [
+                "food-breakfast"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-27T18:58:00+00:00",
+            "Pinyin": "g\u01d4 w\u00f9 b\u00e0ng",
+            "Hanzi": "\u7a40\u7269\u68d2"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "ache or hurt",
+            "Zhuyin": "\u310a\u3128\u3125\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "t\u00f2ng",
+            "Hanzi": "\u75db"
+        },
+        {
+            "Tags": [
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "badminton court",
+            "Zhuyin": "\u3129\u02c7 \u3107\u3120\u02ca \u3111\u3127\u3121\u02ca \u3114\u3124\u02c7",
+            "Subtags": [
+                "hobbies-sports"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u01d4m\u00e1oqi\u00fa ch\u01ceng",
+            "Hanzi": "\u7fbd\u6bdb\u7403 \u5834"
+        },
+        {
+            "Tags": [
+                "sport"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to book",
+            "Zhuyin": "\u3129\u02cb \u3109\u3127\u3125\u02cb",
+            "Subtags": [
+                "hobbies-verbs"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00f9d\u00ecng",
+            "Hanzi": "\u9810\u8a02"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "Indian",
+            "Zhuyin": "\u3127\u3123\u02cb \u3109\u3128\u02cb \u3109\u311c\u02d9",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u00ecnd\u00f9de",
+            "Hanzi": "\u5370\u5ea6\u7684"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to distinguish",
+            "Zhuyin": "\u3108\u3123 \u3105\u3127\u3122\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "f\u0113nbi\u00e0n",
+            "Hanzi": "\u5206\u8fa8"
+        },
+        {
+            "Tags": [
+                "hobbies"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "a song",
+            "Zhuyin": "\u3127 \u3115\u3121\u02c7 \u310d\u311c",
+            "Subtags": [
+                "hobbies-hobbies"
+            ],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "y\u012bsh\u01d2ug\u0113",
+            "Hanzi": "\u4e00\u9996\u6b4c"
+        },
+        {
+            "Tags": [
+                "grammar"
+            ],
+            "Last Created": "2021-05-30T13:29:00+00:00",
+            "English": "the same",
+            "Zhuyin": "\u310f\u311c\u02ca \u3127 \u3127\u3124\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:29:00+00:00",
+            "Pinyin": "S1./O1./N1. \u548c S2./O2./N2. \u4e00\u6a23",
+            "Hanzi": "\u548c \u4e00\u6a23"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-30T13:40:00+00:00",
+            "English": "next week is going to have class",
+            "Zhuyin": "\u3112\u3127\u311a\u02cb \u3112\u3127\u3125 \u3111\u3127 \u3127\u3120\u02cb \u3115\u3124\u02cb \u310e\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-30T13:40:00+00:00",
+            "Pinyin": "xi\u00e0x\u012bngq\u012b y\u00e0o sh\u00e0ngk\u00e8",
+            "Hanzi": "\u4e0b\u661f\u671f \u8981 \u4e0a\u8ab2"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "orange",
+            "Zhuyin": "\u3114\u3125\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-16T11:23:00+00:00",
+            "Pinyin": "ch\u00e9ngs\u00e8",
+            "Hanzi": "\u6a59\u8272"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-30T13:41:00+00:00",
+            "English": "something.....that's it",
+            "Zhuyin": "\u3110\u3127\u3121\u02cb \u310f\u3120\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "\u4e00\u676f\u53ef\u6a02\u5c31\u597d\none cup of Coke that's it",
+            "Timestamp": "2021-05-30T13:41:00+00:00",
+            "Pinyin": "ji\u00f9h\u01ceo",
+            "Hanzi": "......\u5c31\u597d"
+        },
+        {
+            "Tags": [
+                "grammar",
+                "routine"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "I wake up at 7 o'clock",
+            "Zhuyin": "\u3128\u311b\u02c7 \u3111\u3127 \u3109\u3127\u3122\u02c7 \u3111\u3127\u02c7 \u310c\u311e\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "S. # \u9ede\u8d77\u4f86 / \u8d77\u5e8a\nS. wake(s) up at # o'clock",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "w\u01d2 q\u012b di\u01cenq\u01d0l\u00e1i",
+            "Hanzi": "\u6211 \u4e03 \u9ede\u8d77\u4f86"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "blue",
+            "Zhuyin": "\u310c\u3122\u02ca \u3119\u311c\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "l\u00e1ns\u00e8",
+            "Hanzi": "\u85cd\u8272"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "supermarket (use often)",
+            "Zhuyin": "\u3114\u3120 \u3115\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "ch\u0101osh\u00ec",
+            "Hanzi": "\u8d85\u5e02"
+        },
+        {
+            "Tags": [
+                "food"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "main course",
+            "Zhuyin": "\u3113\u3128\u02c7 \u3118\u311e\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:36:00+00:00",
+            "Pinyin": "zh\u01d4c\u00e0i",
+            "Hanzi": "\u4e3b\u83dc"
+        },
+        {
+            "Tags": [
+                "places"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "haunted house",
+            "Zhuyin": "\u3112\u3129\u3125 \u3113\u311e\u02ca",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "xi\u014dngzh\u00e1i",
+            "Hanzi": "\u51f6\u5b85"
+        },
+        {
+            "Tags": [],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "to sell",
+            "Zhuyin": "\u3107\u311e\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-25T10:35:00+00:00",
+            "Pinyin": "m\u00e0i",
+            "Hanzi": "\u8ce3"
+        },
+        {
+            "Tags": [
+                "places",
+                "routine"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "work",
+            "Zhuyin": "\u310d\u3128\u3125 \u3117\u3128\u311b\u02cb",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-12T21:42:00+00:00",
+            "Pinyin": "g\u014dngzu\u00f2",
+            "Hanzi": "\u5de5\u4f5c"
+        },
+        {
+            "Tags": [
+                "body"
+            ],
+            "Last Created": "2021-05-29T17:13:00+00:00",
+            "English": "finger",
+            "Zhuyin": "\u3115\u3121\u02c7 \u3113\u02c7",
+            "Subtags": [],
+            "Examples & Usage": "",
+            "Timestamp": "2021-05-10T21:54:00+00:00",
+            "Pinyin": "sh\u01d2uzh\u01d0",
+            "Hanzi": "\u624b\u6307"
+        }
+    ]
+}
