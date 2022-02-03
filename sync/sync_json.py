@@ -116,7 +116,11 @@ class JsonReader(SourceReader):
 
         columns_obj = [ DataColumn(COLUMN_TYPE(columns_raw[col]), col) for col in columns_raw ]
 
-        ds = DataSet(columns_obj, records=raw_json["records"], format=format_obj)
+        records = raw_json["records"]
+        if limit >= 1:
+            records = records[:limit]
+
+        ds = DataSet(columns_obj, records=records, format=format_obj)
         
         for date_col in date_cols:
             ds.change_column_type(date_col, COLUMN_TYPE.DATE) # reformat all dates in the file to actually be datetime objects
