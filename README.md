@@ -24,13 +24,31 @@ writer = TsvWriter(TableSpec(DATA_SOURCE.TSV, {"file_path": "FILE PATH HERE"}, "
 writer.create_table_sync(dataset)
 ```
 
-### Currently Supported Sync Targets
+## Currently Supported Sync Targets
 
 * Notion
 * JSON files
-* .TSV files
+* TSV files
 
-### How to Test Ancore
+## How to Test Ancore
+
+There are two different ways to test Ancore. You can either run automated tests (this takes some setup) or test via the CLI (this is more convenient and faster to write).
+
+### Testing Via The CLI
+
+There is a basic CLI in the tests folder which allows access to some of the key features in the library. At the moment you can:
+* Update Notion databases from JSON or TSV files
+* Read from Notion databases to JSON or TSV files
+
+Make sure you put the CLI one folder *above* the core folder to ensure modules import correctly. The best way to try the CLI is to try it:
+
+``` ./cli.py read -i notion YOUR_NOTION_DATABASE_ID -o tsv YOUR_FILE_PATH.tsv --secret YOUR_NOTION_API_KEY ```
+
+If you get a merge error when trying to update records in Notion, you might need to remap columns to be the correct type (this is often true when updating from TSVs as TSVs do not hold metadata.) For example:
+
+``` ./cli.py update -i tsv ./test_input/chinese_sample.tsv -o notion YOUR_DATABASE_TABLE -m "Last Created" date -m Subtags multiselect -m Tags multiselect -m Timestamp date --primary_key Hanzi --secret YOUR_NOTION_API_KEY ```
+
+### Running Unit Tests
 
 First, run setup.command to setup the appropriate Python module structure. *If the directory structure is incorrect most tests will fail.*
 
