@@ -158,7 +158,7 @@ class DataSet:
         Returns a copy of self with columns remapped.
         map: A dictionary, with the source_column as key and DataColumn (i.e. target name and type) as value. Also 
         '''
-        clone = copy.deepcopy(self)
+        clone : DataSet = copy.deepcopy(self)
         type_change_results = {}
 
         missing_map_source = []

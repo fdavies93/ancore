@@ -270,7 +270,7 @@ class NotionWriter(SourceWriter):
 
         while not handle.done:
             handle = nr.read_records_sync(100, next_iterator=handle, include_ids=True)
-            right.add_records(handle.records)
+            right.add_records(handle.records.records)
             loop_callback(SyncStatus(-1, len(right.records), SYNC_STATUS_CODE.READING_SOURCE))
 
         lki = build_key_index(left,primary_key)
