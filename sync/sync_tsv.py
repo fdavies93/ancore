@@ -26,7 +26,10 @@ class TsvWriter(SourceWriter):
     def __init__(self, table_spec : TableSpec = None):
         self.path = None
         if "file_path" in table_spec.parameters:
-            self.path = join(os.getcwd(), table_spec.parameters["file_path"])
+            dir_path = os.getcwd()
+            if "absolute_path" in table_spec.parameters:
+                dir_path = table_spec.parameters["absolute_path"]
+            self.path = join(dir_path, table_spec.parameters["file_path"])
     
     def _check_path_set(self):
         if self.path == None:
